@@ -1,0 +1,7353 @@
+/* ==================================================
+   STEP 02 — GALAXY / SCI-FI VISUAL FOUNDATION
+   CH-NIMRA BIRTHDAY UNIVERSE
+   ================================================== */
+
+
+/* ==================================================
+   GLOBAL RESET
+   ================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    min-height: 100%;
+    background: #05020d;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    background: #05020d;
+    color: #ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* ==================================================
+   SPACE ENVIRONMENT
+   ================================================== */
+
+.space {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 48%,
+            rgba(91, 28, 150, 0.22) 0%,
+            rgba(40, 12, 75, 0.12) 28%,
+            transparent 58%
+        ),
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(123, 43, 191, 0.14),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(191, 45, 220, 0.10),
+            transparent 35%
+        ),
+        #05020d;
+}
+
+
+/* ==================================================
+   STAR FIELD
+   ================================================== */
+
+.stars {
+    position: absolute;
+
+    inset: -50%;
+
+    pointer-events: none;
+
+    background-repeat: repeat;
+
+    transform: rotate(8deg);
+
+    opacity: 0.8;
+}
+
+.stars-small {
+    width: 2px;
+    height: 2px;
+
+    background: transparent;
+
+    box-shadow:
+        40px 120px #ffffff,
+        140px 250px #cba6ff,
+        220px 80px #ffffff,
+        310px 330px #a86cff,
+        420px 180px #ffffff,
+        520px 60px #d9c2ff,
+        630px 270px #ffffff,
+        750px 140px #b878ff,
+        850px 350px #ffffff,
+        960px 100px #d7b8ff,
+        1080px 230px #ffffff,
+        1180px 70px #b26dff,
+        1280px 310px #ffffff,
+        1360px 170px #ffffff,
+        1480px 390px #c99bff,
+        1540px 90px #ffffff,
+        1660px 250px #a96cff,
+        1780px 130px #ffffff,
+        1900px 330px #d4b5ff,
+        2020px 190px #ffffff;
+
+    animation: starDrift 70s linear infinite;
+}
+
+.stars-medium {
+    width: 3px;
+    height: 3px;
+
+    background: transparent;
+
+    box-shadow:
+        80px 300px rgba(255,255,255,0.9),
+        250px 160px rgba(192,130,255,0.9),
+        390px 420px rgba(255,255,255,0.8),
+        570px 230px rgba(218,180,255,0.9),
+        720px 480px rgba(255,255,255,0.8),
+        910px 280px rgba(176,100,255,0.9),
+        1040px 450px rgba(255,255,255,0.8),
+        1220px 190px rgba(209,168,255,0.9),
+        1390px 410px rgba(255,255,255,0.8),
+        1580px 270px rgba(187,108,255,0.9),
+        1740px 470px rgba(255,255,255,0.8),
+        1940px 240px rgba(213,180,255,0.9);
+
+    animation: starDriftReverse 95s linear infinite;
+}
+
+.stars-large {
+    width: 4px;
+    height: 4px;
+
+    background: transparent;
+
+    box-shadow:
+        180px 420px rgba(216,174,255,0.95),
+        480px 100px rgba(255,255,255,0.95),
+        820px 360px rgba(194,124,255,0.95),
+        1130px 120px rgba(255,255,255,0.9),
+        1450px 330px rgba(211,164,255,0.95),
+        1800px 180px rgba(255,255,255,0.95);
+
+    animation: starTwinkle 3.5s ease-in-out infinite alternate;
+}
+
+
+/* ==================================================
+   NEBULA
+   ================================================== */
+
+.nebula {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    filter: blur(55px);
+
+    opacity: 0.35;
+}
+
+.nebula-one {
+    width: 420px;
+    height: 420px;
+
+    top: -150px;
+    left: -130px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(141, 53, 255, 0.55),
+            transparent 70%
+        );
+
+    animation: nebulaFloatOne 14s ease-in-out infinite alternate;
+}
+
+.nebula-two {
+    width: 500px;
+    height: 500px;
+
+    right: -180px;
+    bottom: -160px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(211, 54, 235, 0.42),
+            transparent 70%
+        );
+
+    animation: nebulaFloatTwo 18s ease-in-out infinite alternate;
+}
+
+.nebula-three {
+    width: 350px;
+    height: 350px;
+
+    left: 50%;
+    top: 45%;
+
+    transform: translate(-50%, -50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(112, 44, 255, 0.25),
+            transparent 70%
+        );
+
+    filter: blur(75px);
+
+    animation: nebulaPulse 7s ease-in-out infinite alternate;
+}
+
+
+/* ==================================================
+   FUTURISTIC GRID
+   ================================================== */
+
+.space-grid {
+    position: absolute;
+
+    left: -20%;
+    right: -20%;
+    bottom: -18%;
+
+    height: 55%;
+
+    pointer-events: none;
+
+    opacity: 0.16;
+
+    background-image:
+        linear-gradient(
+            rgba(165, 76, 255, 0.28) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(165, 76, 255, 0.28) 1px,
+            transparent 1px
+        );
+
+    background-size: 55px 55px;
+
+    transform:
+        perspective(500px)
+        rotateX(62deg);
+
+    transform-origin: bottom;
+
+    mask-image:
+        linear-gradient(
+            to top,
+            black,
+            transparent
+        );
+}
+
+
+/* ==================================================
+   FLOATING PARTICLES
+   ================================================== */
+
+#particles {
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+
+    width: 3px;
+    height: 3px;
+
+    border-radius: 50%;
+
+    background: #c98cff;
+
+    box-shadow:
+        0 0 8px #b86cff,
+        0 0 16px rgba(184, 108, 255, 0.7);
+
+    animation:
+        particleFloat
+        var(--duration)
+        ease-in-out
+        infinite alternate;
+
+    opacity: var(--opacity);
+}
+
+
+/* ==================================================
+   MAIN FOUNDATION
+   ================================================== */
+
+.foundation {
+    position: relative;
+    z-index: 10;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
+}
+
+
+/* ==================================================
+   HOLOGRAPHIC CARD
+   ================================================== */
+
+.foundation-card {
+    position: relative;
+
+    width: min(90%, 520px);
+
+    padding: 45px 30px;
+
+    text-align: center;
+
+    border: 1px solid rgba(190, 105, 255, 0.42);
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(39, 12, 69, 0.80),
+            rgba(12, 5, 26, 0.78)
+        );
+
+    box-shadow:
+        0 0 25px rgba(155, 62, 255, 0.16),
+        0 0 70px rgba(117, 38, 203, 0.10),
+        inset 0 0 25px rgba(169, 80, 255, 0.06);
+
+    backdrop-filter: blur(14px);
+
+    overflow: hidden;
+}
+
+
+/* Top holographic line */
+
+.foundation-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 12%;
+
+    width: 76%;
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(221, 161, 255, 0.9),
+            transparent
+        );
+
+    box-shadow:
+        0 0 12px rgba(206, 124, 255, 0.8);
+}
+
+
+/* Bottom holographic line */
+
+.foundation-card::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 20%;
+
+    width: 60%;
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(171, 91, 255, 0.8),
+            transparent
+        );
+}
+
+
+/* ==================================================
+   STATUS
+   ================================================== */
+
+.status-dot {
+    width: 11px;
+    height: 11px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    background: #c078ff;
+
+    box-shadow:
+        0 0 10px #c078ff,
+        0 0 25px rgba(192, 120, 255, 0.7),
+        0 0 45px rgba(192, 120, 255, 0.35);
+
+    animation: statusPulse 2.2s ease-in-out infinite;
+}
+
+.system-label {
+    margin-bottom: 14px;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: #c7a8ed;
+
+    text-shadow:
+        0 0 10px rgba(190, 130, 255, 0.45);
+}
+
+
+/* ==================================================
+   TITLE
+   ================================================== */
+
+h1 {
+    margin-bottom: 10px;
+
+    font-size: clamp(32px, 8vw, 52px);
+
+    letter-spacing: 3px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 10px rgba(255,255,255,0.45),
+        0 0 25px rgba(180, 90, 255, 0.45),
+        0 0 50px rgba(145, 60, 255, 0.25);
+}
+
+.foundation-text {
+    margin-bottom: 30px;
+
+    font-size: 16px;
+
+    letter-spacing: 3px;
+
+    color: #c993ff;
+
+    text-shadow:
+        0 0 12px rgba(194, 116, 255, 0.45);
+}
+
+
+/* ==================================================
+   CONNECTION STATUS
+   ================================================== */
+
+.connection-status {
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    color: #aaa0b8;
+}
+
+.connection-status span {
+    color: #d89cff;
+
+    margin-right: 8px;
+
+    text-shadow:
+        0 0 8px rgba(216, 156, 255, 0.7);
+}
+
+#js-status {
+    margin-right: 0;
+}
+
+
+/* ==================================================
+   ANIMATIONS
+   ================================================== */
+
+@keyframes starDrift {
+
+    from {
+        transform:
+            rotate(8deg)
+            translate3d(0, 0, 0);
+    }
+
+    to {
+        transform:
+            rotate(8deg)
+            translate3d(-120px, 90px, 0);
+    }
+}
+
+@keyframes starDriftReverse {
+
+    from {
+        transform:
+            rotate(8deg)
+            translate3d(0, 0, 0);
+    }
+
+    to {
+        transform:
+            rotate(8deg)
+            translate3d(100px, -70px, 0);
+    }
+}
+
+@keyframes starTwinkle {
+
+    from {
+        opacity: 0.25;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes nebulaFloatOne {
+
+    from {
+        transform: translate(0, 0) scale(1);
+    }
+
+    to {
+        transform: translate(70px, 50px) scale(1.12);
+    }
+}
+
+@keyframes nebulaFloatTwo {
+
+    from {
+        transform: translate(0, 0) scale(1);
+    }
+
+    to {
+        transform: translate(-60px, -45px) scale(1.1);
+    }
+}
+
+@keyframes nebulaPulse {
+
+    from {
+        opacity: 0.18;
+        transform:
+            translate(-50%, -50%)
+            scale(0.9);
+    }
+
+    to {
+        opacity: 0.38;
+        transform:
+            translate(-50%, -50%)
+            scale(1.15);
+    }
+}
+
+@keyframes statusPulse {
+
+    0%,
+    100% {
+        transform: scale(0.9);
+
+        box-shadow:
+            0 0 10px #c078ff,
+            0 0 25px rgba(192, 120, 255, 0.55);
+    }
+
+    50% {
+        transform: scale(1.15);
+
+        box-shadow:
+            0 0 15px #d59cff,
+            0 0 35px rgba(192, 120, 255, 0.8),
+            0 0 60px rgba(192, 120, 255, 0.3);
+    }
+}
+
+@keyframes particleFloat {
+
+    from {
+        transform: translate3d(0, 0, 0) scale(0.7);
+    }
+
+    to {
+        transform: translate3d(
+            var(--move-x),
+            var(--move-y),
+            0
+        ) scale(1.3);
+    }
+}
+
+
+/* ==================================================
+   MOBILE
+   ================================================== */
+
+@media (max-width: 480px) {
+
+    .foundation {
+        padding: 18px;
+    }
+
+    .foundation-card {
+        width: 100%;
+
+        padding: 38px 20px;
+
+        border-radius: 22px;
+    }
+
+    .system-label {
+        letter-spacing: 3px;
+    }
+
+    .foundation-text {
+        font-size: 14px;
+    }
+
+    .space-grid {
+        bottom: -10%;
+
+        height: 40%;
+
+        background-size: 42px 42px;
+    }
+
+    .nebula-one {
+        width: 300px;
+        height: 300px;
+    }
+
+    .nebula-two {
+        width: 340px;
+        height: 340px;
+    }
+}
+
+
+/* ==================================================
+   REDUCED MOTION
+   ================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+/* =========================================
+   STEP 03 — BIRTHDAY ACCESS LOCK
+   CH-NIMRA
+   ========================================= */
+
+#birthday-lock {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(92, 32, 145, 0.18),
+            rgba(5, 2, 13, 0.72) 55%,
+            rgba(5, 2, 13, 0.94)
+        );
+
+    backdrop-filter: blur(5px);
+
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease;
+}
+
+.birthday-lock-card {
+    position: relative;
+
+    width: min(100%, 470px);
+
+    padding: 42px 28px 30px;
+
+    text-align: center;
+
+    border: 1px solid rgba(194, 116, 255, 0.48);
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(35, 10, 65, 0.94),
+            rgba(9, 3, 22, 0.94)
+        );
+
+    box-shadow:
+        0 0 25px rgba(159, 68, 255, 0.22),
+        0 0 80px rgba(120, 42, 210, 0.14),
+        inset 0 0 30px rgba(176, 91, 255, 0.07);
+
+    backdrop-filter: blur(18px);
+
+    overflow: hidden;
+
+    animation: birthdayLockAppear 1s ease both;
+}
+
+.birthday-lock-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 10%;
+
+    width: 80%;
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #d8a0ff,
+            transparent
+        );
+
+    box-shadow:
+        0 0 14px #bd70ff;
+}
+
+.birthday-lock-card::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 18%;
+
+    width: 64%;
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #a952ff,
+            transparent
+        );
+}
+
+.birthday-lock-icon {
+    position: relative;
+
+    width: 72px;
+    height: 72px;
+
+    margin: 0 auto 22px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(184, 100, 255, 0.18),
+            transparent 68%
+        );
+
+    box-shadow:
+        0 0 20px rgba(181, 91, 255, 0.18);
+
+    animation:
+        lockIconPulse
+        2.8s
+        ease-in-out
+        infinite;
+}
+
+.birthday-lock-icon::before {
+    content: "";
+
+    position: absolute;
+
+    width: 27px;
+    height: 25px;
+
+    top: 14px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border: 3px solid #d59aff;
+
+    border-bottom: 0;
+
+    border-radius: 16px 16px 0 0;
+
+    filter:
+        drop-shadow(
+            0 0 7px
+            rgba(210, 145, 255, 0.9)
+        );
+}
+
+.birthday-lock-icon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 42px;
+    height: 34px;
+
+    bottom: 8px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    border-radius: 7px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #d9a2ff,
+            #8641d2
+        );
+
+    box-shadow:
+        0 0 14px rgba(194, 115, 255, 0.75);
+}
+
+.birthday-access-label {
+    margin-bottom: 12px;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: #c9a5e9;
+
+    text-shadow:
+        0 0 10px rgba(198, 135, 255, 0.55);
+}
+
+.birthday-lock-title {
+    margin-bottom: 12px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(28px, 7vw, 40px);
+
+    letter-spacing: 1px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 12px rgba(255, 255, 255, 0.35),
+        0 0 30px rgba(180, 90, 255, 0.45);
+}
+
+.birthday-lock-description {
+    max-width: 330px;
+
+    margin: 0 auto 28px;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #aa9ab8;
+}
+
+.birthday-input {
+    width: 100%;
+
+    height: 54px;
+
+    padding: 0 18px;
+
+    border: 1px solid rgba(190, 105, 255, 0.38);
+
+    border-radius: 14px;
+
+    outline: none;
+
+    background:
+        rgba(12, 4, 27, 0.82);
+
+    color: #f3ddff;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    letter-spacing: 3px;
+
+    box-shadow:
+        inset 0 0 18px rgba(157, 65, 255, 0.08),
+        0 0 15px rgba(145, 60, 255, 0.05);
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.birthday-input::placeholder {
+    color: #76677f;
+
+    letter-spacing: 2px;
+}
+
+.birthday-input:focus {
+    border-color: rgba(211, 145, 255, 0.8);
+
+    box-shadow:
+        0 0 15px rgba(173, 77, 255, 0.2),
+        inset 0 0 18px rgba(157, 65, 255, 0.1);
+}
+
+.birthday-enter-button {
+    width: 100%;
+
+    height: 54px;
+
+    margin-top: 14px;
+
+    border: 1px solid rgba(207, 140, 255, 0.55);
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(
+            100deg,
+            rgba(116, 45, 181, 0.75),
+            rgba(172, 75, 217, 0.65)
+        );
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    box-shadow:
+        0 0 18px rgba(169, 73, 235, 0.22);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.birthday-enter-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 25px rgba(191, 93, 255, 0.4),
+        0 0 50px rgba(155, 58, 220, 0.18);
+}
+
+.birthday-enter-button:active {
+    transform: scale(0.98);
+}
+
+.birthday-enter-button .arrow {
+    margin-left: 10px;
+
+    font-size: 18px;
+}
+
+.birthday-access-message {
+    min-height: 22px;
+
+    margin-top: 16px;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+    transition: all 0.3s ease;
+}
+
+.birthday-denied {
+    color: #d89cff;
+
+    text-shadow:
+        0 0 12px rgba(200, 115, 255, 0.6);
+}
+
+.birthday-granted {
+    color: #e6bdff;
+
+    text-shadow:
+        0 0 12px rgba(212, 148, 255, 0.8),
+        0 0 25px rgba(180, 85, 255, 0.45);
+}
+
+.birthday-shake {
+    animation:
+        birthdayShake 0.45s ease;
+}
+
+.birthday-lock-hidden {
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+}
+
+.birthday-lock-footer {
+    margin-top: 22px;
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    color: #665a70;
+}
+
+.birthday-heart {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #b875e8;
+
+    font-size: 18px;
+
+    text-shadow:
+        0 0 12px rgba(192, 102, 255, 0.6);
+}
+
+@keyframes birthdayLockAppear {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(22px)
+            scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+@keyframes lockIconPulse {
+
+    0%,
+    100% {
+        transform: scale(0.96);
+
+        box-shadow:
+            0 0 18px rgba(181, 91, 255, 0.16);
+    }
+
+    50% {
+        transform: scale(1.05);
+
+        box-shadow:
+            0 0 30px rgba(181, 91, 255, 0.32);
+    }
+}
+
+@keyframes birthdayShake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-8px);
+    }
+
+    40% {
+        transform: translateX(8px);
+    }
+
+    60% {
+        transform: translateX(-6px);
+    }
+
+    80% {
+        transform: translateX(6px);
+    }
+}
+
+@media (max-width: 480px) {
+
+    #birthday-lock {
+        padding: 18px;
+    }
+
+    .birthday-lock-card {
+        padding: 36px 20px 26px;
+
+        border-radius: 24px;
+    }
+
+    .birthday-lock-title {
+        font-size: 30px;
+    }
+
+    .birthday-lock-description {
+        font-size: 13px;
+    }
+}
+/* =========================================
+   STEP 04 — CINEMATIC ACCESS INTRO
+   ========================================= */
+
+.cinematic-intro {
+    position: fixed;
+    inset: 0;
+
+    z-index: 10000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(113, 42, 180, 0.28),
+            rgba(8, 2, 18, 0.96) 65%
+        );
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    overflow: hidden;
+}
+
+.cinematic-intro.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.cinematic-intro.exit {
+    animation: cinematicExit 1.5s ease forwards;
+}
+
+.cinematic-scan {
+    position: absolute;
+    left: 0;
+    top: -20%;
+
+    width: 100%;
+    height: 2px;
+
+    background: #dca2ff;
+
+    box-shadow:
+        0 0 10px #dca2ff,
+        0 0 35px rgba(190, 91, 255, 0.9),
+        0 0 80px rgba(155, 54, 255, 0.6);
+
+    opacity: 0;
+}
+
+.cinematic-intro.active .cinematic-scan {
+    animation: cinematicScan 2.2s ease-in-out forwards;
+}
+
+.cinematic-content {
+    position: relative;
+
+    text-align: center;
+
+    opacity: 0;
+
+    transform: scale(0.92);
+}
+
+.cinematic-intro.active .cinematic-content {
+    animation:
+        cinematicContentIn
+        1.2s
+        0.25s
+        ease
+        forwards;
+}
+
+.cinematic-status {
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    color: #d8a1ff;
+
+    text-shadow:
+        0 0 12px rgba(207, 139, 255, 0.8);
+}
+
+.cinematic-line {
+    width: 120px;
+    height: 1px;
+
+    margin: 18px auto;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #c47cff,
+            transparent
+        );
+
+    box-shadow:
+        0 0 12px rgba(196, 124, 255, 0.8);
+}
+
+.cinematic-name {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(48px, 13vw, 90px);
+
+    letter-spacing: 8px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 12px rgba(255, 255, 255, 0.55),
+        0 0 30px rgba(196, 107, 255, 0.8),
+        0 0 70px rgba(142, 44, 220, 0.55);
+}
+
+.cinematic-subtitle {
+    margin-top: 18px;
+
+    font-size: 10px;
+
+    letter-spacing: 5px;
+
+    color: #9d8aa9;
+}
+
+.cinematic-loader {
+    width: 180px;
+    height: 2px;
+
+    margin: 34px auto 0;
+
+    overflow: hidden;
+
+    background:
+        rgba(174, 93, 240, 0.12);
+}
+
+.cinematic-loader span {
+    display: block;
+
+    width: 35%;
+    height: 100%;
+
+    background: #d398ff;
+
+    box-shadow:
+        0 0 12px #c77dff;
+
+    animation:
+        cinematicLoader
+        1.3s
+        ease-in-out
+        infinite;
+}
+
+@keyframes cinematicScan {
+
+    0% {
+        top: -10%;
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 110%;
+        opacity: 0;
+    }
+}
+
+@keyframes cinematicContentIn {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes cinematicLoader {
+
+    0% {
+        transform: translateX(-130%);
+    }
+
+    100% {
+        transform: translateX(400%);
+    }
+}
+
+@keyframes cinematicExit {
+
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.08);
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .cinematic-name {
+        font-size: 48px;
+        letter-spacing: 5px;
+    }
+
+    .cinematic-subtitle {
+        letter-spacing: 3px;
+    }
+}
+/* =========================================
+   STEP 05 — CH-NIMRA HERO UNIVERSE
+   ========================================= */
+
+#hero-universe {
+    position: fixed;
+    inset: 0;
+
+    z-index: 500;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(116, 42, 184, 0.22),
+            transparent 35%
+        );
+}
+
+#hero-universe.hero-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+
+    animation:
+        heroUniverseIn
+        1.4s
+        ease
+        both;
+}
+
+.hero-content {
+    position: relative;
+
+    z-index: 5;
+
+    width: min(90%, 650px);
+
+    padding: 45px 25px;
+
+    text-align: center;
+}
+
+.hero-eyebrow {
+    margin-bottom: 20px;
+
+    font-size: 10px;
+
+    letter-spacing: 5px;
+
+    color: #b89bc9;
+
+    text-shadow:
+        0 0 12px rgba(192, 118, 255, 0.5);
+}
+
+.hero-name {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(55px, 15vw, 110px);
+
+    line-height: 1;
+
+    letter-spacing: 7px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 12px rgba(255,255,255,0.7),
+        0 0 30px rgba(211,133,255,0.85),
+        0 0 70px rgba(155,55,235,0.7),
+        0 0 120px rgba(126,37,202,0.4);
+
+    animation:
+        heroNameGlow
+        3s
+        ease-in-out
+        infinite;
+}
+
+.hero-divider {
+    width: 150px;
+    height: 1px;
+
+    margin: 25px auto 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #d29aff,
+            transparent
+        );
+
+    box-shadow:
+        0 0 15px rgba(205,130,255,0.9);
+}
+
+.hero-birthday {
+    margin: 0;
+
+    font-size: 12px;
+
+    letter-spacing: 6px;
+
+    color: #d3b7e1;
+}
+
+.hero-message {
+    max-width: 390px;
+
+    margin: 25px auto 30px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: #a99ab3;
+}
+
+.hero-enter-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    min-width: 230px;
+    height: 52px;
+
+    padding: 0 25px;
+
+    border: 1px solid rgba(205,139,255,0.55);
+
+    border-radius: 30px;
+
+    background:
+        rgba(116,44,170,0.18);
+
+    color: #eee0f8;
+
+    cursor: pointer;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    box-shadow:
+        0 0 20px rgba(164,73,226,0.16),
+        inset 0 0 15px rgba(170,80,230,0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.hero-enter-button:hover {
+    transform: translateY(-3px);
+
+    background:
+        rgba(144,56,201,0.28);
+
+    box-shadow:
+        0 0 25px rgba(190,96,255,0.35),
+        0 0 55px rgba(151,54,215,0.15);
+}
+
+.hero-arrow {
+    font-size: 18px;
+
+    transition:
+        transform 0.3s ease;
+}
+
+.hero-enter-button:hover .hero-arrow {
+    transform: translateX(5px);
+}
+
+
+/* ---------- ORBITS ---------- */
+
+.hero-orbit {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    border: 1px solid rgba(190,106,255,0.13);
+
+    border-radius: 50%;
+
+    transform:
+        translate(-50%, -50%)
+        rotate(-18deg);
+
+    pointer-events: none;
+}
+
+.orbit-one {
+    width: 360px;
+    height: 160px;
+
+    animation:
+        heroOrbitOne
+        12s
+        linear
+        infinite;
+}
+
+.orbit-two {
+    width: 500px;
+    height: 220px;
+
+    transform:
+        translate(-50%, -50%)
+        rotate(35deg);
+
+    animation:
+        heroOrbitTwo
+        16s
+        linear
+        infinite;
+}
+
+.orbit-three {
+    width: 700px;
+    height: 310px;
+
+    transform:
+        translate(-50%, -50%)
+        rotate(-55deg);
+
+    opacity: 0.5;
+
+    animation:
+        heroOrbitThree
+        20s
+        linear
+        infinite;
+}
+
+
+/* ---------- CORNER UI ---------- */
+
+.hero-corner {
+    position: absolute;
+
+    width: 45px;
+    height: 45px;
+
+    opacity: 0.45;
+}
+
+.corner-top-left {
+    top: 30px;
+    left: 25px;
+
+    border-top: 1px solid #a866d5;
+    border-left: 1px solid #a866d5;
+}
+
+.corner-top-right {
+    top: 30px;
+    right: 25px;
+
+    border-top: 1px solid #a866d5;
+    border-right: 1px solid #a866d5;
+}
+
+.corner-bottom-left {
+    bottom: 30px;
+    left: 25px;
+
+    border-bottom: 1px solid #a866d5;
+    border-left: 1px solid #a866d5;
+}
+
+.corner-bottom-right {
+    bottom: 30px;
+    right: 25px;
+
+    border-bottom: 1px solid #a866d5;
+    border-right: 1px solid #a866d5;
+}
+
+
+/* ---------- ANIMATIONS ---------- */
+
+@keyframes heroUniverseIn {
+
+    from {
+        opacity: 0;
+
+        transform: scale(1.04);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: scale(1);
+    }
+}
+
+@keyframes heroNameGlow {
+
+    0%,
+    100% {
+        filter: brightness(0.95);
+    }
+
+    50% {
+        filter: brightness(1.15);
+    }
+}
+
+@keyframes heroOrbitOne {
+
+    from {
+        transform:
+            translate(-50%, -50%)
+            rotate(-18deg);
+    }
+
+    to {
+        transform:
+            translate(-50%, -50%)
+            rotate(342deg);
+    }
+}
+
+@keyframes heroOrbitTwo {
+
+    from {
+        transform:
+            translate(-50%, -50%)
+            rotate(35deg);
+    }
+
+    to {
+        transform:
+            translate(-50%, -50%)
+            rotate(-325deg);
+    }
+}
+
+@keyframes heroOrbitThree {
+
+    from {
+        transform:
+            translate(-50%, -50%)
+            rotate(-55deg);
+    }
+
+    to {
+        transform:
+            translate(-50%, -50%)
+            rotate(305deg);
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .hero-name {
+        font-size: 52px;
+        letter-spacing: 4px;
+    }
+
+    .hero-eyebrow {
+        letter-spacing: 3px;
+    }
+
+    .hero-message {
+        font-size: 14px;
+    }
+
+    .orbit-three {
+        width: 520px;
+        height: 230px;
+    }
+
+}
+/* =========================================
+   STEP 05 FIX — CINEMATIC / HERO SEQUENCE
+   ========================================= */
+
+/* Jab cinematic chal raha ho,
+   Hero ko completely hide rakho */
+#cinematic-intro.active ~ #hero-universe.hero-visible {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* Cinematic finish hone ke baad Hero show hoga */
+#hero-universe.hero-visible {
+    transition:
+        opacity 1s ease,
+        visibility 1s ease;
+}
+/* =========================================
+   STEP 06 — HER UNIVERSE MENU
+   ========================================= */
+
+#universe-menu {
+    position: fixed;
+    inset: 0;
+
+    z-index: 700;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 35px 22px;
+
+    overflow-y: auto;
+
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(130, 48, 190, 0.18),
+            transparent 38%
+        ),
+        rgba(5, 2, 13, 0.96);
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease;
+}
+
+#universe-menu.menu-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.universe-menu-header {
+    text-align: center;
+
+    margin-bottom: 32px;
+}
+
+.universe-menu-label {
+    margin-bottom: 12px;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    color: #ae8bc2;
+}
+
+.universe-menu-header h2 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(38px, 10vw, 62px);
+
+    letter-spacing: 5px;
+
+    color: #fff;
+
+    text-shadow:
+        0 0 15px rgba(255,255,255,0.4),
+        0 0 35px rgba(188,92,255,0.7);
+}
+
+.universe-menu-subtitle {
+    margin-top: 12px;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    color: #8d7c98;
+}
+
+.universe-menu-grid {
+    width: min(100%, 760px);
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+.universe-card {
+    position: relative;
+
+    min-height: 190px;
+
+    padding: 24px;
+
+    text-align: left;
+
+    border: 1px solid rgba(190,105,255,0.2);
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(38,12,62,0.72),
+            rgba(12,4,25,0.82)
+        );
+
+    color: white;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    box-shadow:
+        inset 0 0 25px rgba(177,76,235,0.04);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.universe-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 60%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(205,140,255,0.08),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.6s ease;
+}
+
+.universe-card:hover::before {
+    left: 140%;
+}
+
+.universe-card:hover {
+    transform: translateY(-5px);
+
+    border-color:
+        rgba(211,139,255,0.55);
+
+    box-shadow:
+        0 0 25px rgba(166,70,226,0.18),
+        inset 0 0 25px rgba(177,76,235,0.08);
+}
+
+.universe-card-number {
+    position: absolute;
+
+    top: 18px;
+    right: 20px;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #66556f;
+}
+
+.universe-card-icon {
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-size: 25px;
+
+    color: #c77cff;
+
+    text-shadow:
+        0 0 15px rgba(199,124,255,0.65);
+}
+
+.universe-card-title {
+    display: block;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    color: #eadcf2;
+}
+
+.universe-card-text {
+    display: block;
+
+    max-width: 250px;
+
+    margin-top: 10px;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    color: #82728c;
+}
+
+.universe-card-arrow {
+    position: absolute;
+
+    right: 22px;
+    bottom: 20px;
+
+    font-size: 19px;
+
+    color: #ad62df;
+
+    transition:
+        transform 0.3s ease;
+}
+
+.universe-card:hover .universe-card-arrow {
+    transform: translateX(5px);
+}
+
+.universe-menu-footer {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+    width: min(100%, 500px);
+}
+
+.universe-menu-footer span {
+    flex: 1;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(170,94,220,0.3)
+        );
+}
+
+.universe-menu-footer span:last-child {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(170,94,220,0.3),
+            transparent
+        );
+}
+
+.universe-menu-footer p {
+    margin: 0;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    color: #66566f;
+}
+
+
+@media (max-width: 600px) {
+
+    #universe-menu {
+        justify-content: flex-start;
+
+        padding-top: 55px;
+    }
+
+    .universe-menu-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 430px;
+    }
+
+    .universe-card {
+        min-height: 155px;
+    }
+
+    .universe-menu-header {
+        margin-bottom: 25px;
+    }
+
+}
+/* =========================================================
+   STEP 07 — HER SMILE
+   ========================================================= */
+
+.smile-world {
+    position: fixed;
+    inset: 0;
+    z-index: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    background:
+        radial-gradient(circle at 50% 42%,
+            rgba(190, 90, 255, 0.20),
+            transparent 25%),
+        radial-gradient(circle at 20% 80%,
+            rgba(255, 80, 190, 0.12),
+            transparent 30%),
+        radial-gradient(circle at 80% 20%,
+            rgba(110, 70, 255, 0.14),
+            transparent 32%),
+        #080414;
+
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease;
+}
+
+.smile-world.smile-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Stars */
+
+.smile-stars {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.8;
+
+    background-image:
+        radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1.5px),
+        radial-gradient(circle, rgba(220,170,255,0.6) 1px, transparent 1.5px);
+
+    background-size: 90px 90px, 150px 150px;
+    background-position: 10px 20px, 60px 80px;
+
+    animation: smileStarsMove 18s linear infinite;
+}
+
+@keyframes smileStarsMove {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-90px);
+    }
+}
+
+/* Central glow */
+
+.smile-glow {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        rgba(210, 100, 255, 0.20),
+        rgba(255, 90, 190, 0.08) 35%,
+        transparent 70%
+    );
+
+    filter: blur(15px);
+    animation: smileGlowPulse 4s ease-in-out infinite;
+}
+
+@keyframes smileGlowPulse {
+    0%, 100% {
+        transform: scale(0.92);
+        opacity: 0.65;
+    }
+
+    50% {
+        transform: scale(1.08);
+        opacity: 1;
+    }
+}
+
+/* Back button */
+
+.smile-back-button {
+    position: absolute;
+    top: 28px;
+    left: 28px;
+
+    border: 1px solid rgba(210, 150, 255, 0.35);
+    background: rgba(30, 10, 55, 0.45);
+    color: rgba(245, 225, 255, 0.8);
+
+    padding: 11px 16px;
+    border-radius: 8px;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(12px);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+.smile-back-button span {
+    margin-right: 7px;
+}
+
+.smile-back-button:hover {
+    transform: translateX(-4px);
+
+    border-color: rgba(225, 170, 255, 0.8);
+
+    background: rgba(70, 25, 100, 0.55);
+}
+
+/* Content */
+
+.smile-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(680px, 88%);
+    text-align: center;
+
+    padding: 40px 25px;
+}
+
+.smile-eyebrow {
+    margin: 0 0 22px;
+
+    color: rgba(220, 175, 255, 0.65);
+
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.smile-symbol {
+    margin-bottom: 12px;
+
+    color: rgba(255, 190, 240, 0.95);
+
+    font-size: 54px;
+    line-height: 1;
+
+    text-shadow:
+        0 0 12px rgba(255, 150, 230, 0.7),
+        0 0 35px rgba(190, 80, 255, 0.5);
+
+    animation: smileHeart 2.5s ease-in-out infinite;
+}
+
+@keyframes smileHeart {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+}
+
+.smile-title {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: clamp(42px, 9vw, 86px);
+    font-weight: 700;
+    letter-spacing: 8px;
+
+    text-shadow:
+        0 0 12px rgba(255,255,255,0.45),
+        0 0 35px rgba(190,90,255,0.8),
+        0 0 75px rgba(150,50,255,0.45);
+}
+
+.smile-line {
+    width: 100px;
+    height: 1px;
+
+    margin: 24px auto 28px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(230,180,255,0.9),
+        transparent
+    );
+
+    box-shadow: 0 0 12px rgba(220,150,255,0.7);
+}
+
+.smile-message {
+    max-width: 590px;
+    margin: 0 auto;
+
+    color: rgba(255,255,255,0.92);
+
+    font-size: clamp(17px, 3vw, 23px);
+    line-height: 1.7;
+    letter-spacing: 0.4px;
+}
+
+.smile-submessage {
+    max-width: 540px;
+    margin: 22px auto 0;
+
+    color: rgba(225,205,240,0.65);
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Continue button */
+
+.smile-continue-button {
+    margin-top: 38px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 14px 22px;
+
+    border: 1px solid rgba(210,150,255,0.4);
+    border-radius: 8px;
+
+    background: rgba(45,15,70,0.4);
+
+    color: rgba(250,235,255,0.85);
+
+    font-size: 10px;
+    letter-spacing: 2.5px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(10px);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.smile-continue-button:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(235,190,255,0.9);
+
+    box-shadow:
+        0 0 18px rgba(190,100,255,0.25);
+}
+
+.smile-continue-button span:last-child {
+    font-size: 16px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .smile-back-button {
+        top: 18px;
+        left: 18px;
+
+        padding: 9px 12px;
+
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .smile-content {
+        padding: 50px 18px 30px;
+    }
+
+    .smile-eyebrow {
+        font-size: 8px;
+        letter-spacing: 3px;
+    }
+
+    .smile-symbol {
+        font-size: 44px;
+    }
+
+    .smile-title {
+        letter-spacing: 5px;
+    }
+
+    .smile-message {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .smile-submessage {
+        font-size: 12px;
+    }
+
+    .smile-continue-button {
+        margin-top: 30px;
+        padding: 12px 16px;
+    }
+}
+/* =========================================================
+   STEP 08 — MEMORY GALAXY 2.0
+   CINEMATIC MEMORY CONSTELLATION
+   ========================================================= */
+
+.memory-world {
+    position: fixed;
+    inset: 0;
+    z-index: 810;
+
+    overflow: hidden;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 50% 48%,
+            rgba(130, 55, 255, 0.15),
+            transparent 27%
+        ),
+        #05020d;
+
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease;
+}
+
+.memory-world.memory-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Background */
+
+.memory-space {
+    position: fixed;
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+}
+
+.memory-stars {
+    position: absolute;
+    inset: -100px;
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,0.8) 1px,
+            transparent 1.5px
+        ),
+        radial-gradient(
+            circle,
+            rgba(190,130,255,0.55) 1px,
+            transparent 1.5px
+        );
+
+    background-size:
+        95px 95px,
+        160px 160px;
+
+    animation:
+        memoryStarsDrift 24s linear infinite;
+}
+
+@keyframes memoryStarsDrift {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100px);
+    }
+
+}
+
+.memory-nebula {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    opacity: 0.28;
+}
+
+.memory-nebula-one {
+    top: -220px;
+    left: -170px;
+
+    background: rgba(125,50,255,0.6);
+}
+
+.memory-nebula-two {
+    right: -180px;
+    bottom: -200px;
+
+    background: rgba(255,60,190,0.38);
+}
+
+.memory-scan-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    height: 1px;
+
+    top: -5%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(210,150,255,0.6),
+            transparent
+        );
+
+    box-shadow:
+        0 0 20px rgba(190,100,255,0.6);
+
+    opacity: 0.25;
+
+    animation:
+        memoryScanMove 8s linear infinite;
+}
+
+@keyframes memoryScanMove {
+
+    from {
+        top: -5%;
+    }
+
+    to {
+        top: 105%;
+    }
+
+}
+
+/* Back */
+
+.memory-back-button {
+    position: fixed;
+
+    top: 24px;
+    left: 24px;
+
+    z-index: 50;
+
+    padding: 11px 16px;
+
+    border: 1px solid rgba(210,150,255,0.35);
+    border-radius: 8px;
+
+    background: rgba(20,6,38,0.6);
+
+    color: rgba(245,225,255,0.82);
+
+    font-size: 9px;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(12px);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.memory-back-button:hover {
+    transform: translateX(-4px);
+
+    border-color:
+        rgba(235,190,255,0.9);
+}
+
+.memory-back-button span {
+    margin-right: 7px;
+}
+
+/* =========================================================
+   BOOT SCREEN
+   ========================================================= */
+
+.memory-boot {
+    position: absolute;
+    inset: 0;
+
+    z-index: 30;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(120,50,255,0.08),
+            transparent 40%
+        );
+
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease;
+}
+
+.memory-boot.memory-boot-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.memory-boot-core {
+    position: relative;
+
+    width: 170px;
+    height: 170px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+.memory-core-ring {
+    position: absolute;
+
+    border: 1px solid rgba(200,140,255,0.45);
+
+    border-radius: 50%;
+}
+
+.ring-a {
+    width: 80px;
+    height: 80px;
+
+    animation:
+        memoryRingSpin 5s linear infinite;
+}
+
+.ring-b {
+    width: 120px;
+    height: 120px;
+
+    border-style: dashed;
+
+    animation:
+        memoryRingSpinReverse 8s linear infinite;
+}
+
+.ring-c {
+    width: 165px;
+    height: 165px;
+
+    opacity: 0.5;
+
+    animation:
+        memoryRingSpin 12s linear infinite;
+}
+
+@keyframes memoryRingSpin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes memoryRingSpinReverse {
+
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+
+}
+
+.memory-core-light {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            #fff,
+            rgba(190,100,255,0.8) 30%,
+            transparent 72%
+        );
+
+    box-shadow:
+        0 0 20px rgba(220,160,255,0.9),
+        0 0 60px rgba(160,70,255,0.8);
+
+    animation:
+        memoryCorePulse 2s ease-in-out infinite;
+}
+
+@keyframes memoryCorePulse {
+
+    0%, 100% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+}
+
+.memory-boot-label {
+    margin: 0 0 12px;
+
+    color: rgba(220,175,255,0.7);
+
+    font-size: 9px;
+    letter-spacing: 5px;
+}
+
+.memory-boot h2 {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: clamp(20px, 4vw, 32px);
+
+    letter-spacing: 4px;
+
+    text-shadow:
+        0 0 20px rgba(180,90,255,0.8);
+}
+
+.memory-boot-progress {
+    width: min(300px, 65vw);
+    height: 2px;
+
+    margin-top: 25px;
+
+    overflow: hidden;
+
+    background: rgba(200,150,255,0.12);
+}
+
+.memory-boot-progress span {
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #d9a8ff,
+            #fff
+        );
+
+    box-shadow:
+        0 0 15px rgba(210,150,255,0.9);
+
+    animation:
+        memoryBootProgress 2.5s ease forwards;
+}
+
+@keyframes memoryBootProgress {
+
+    to {
+        width: 100%;
+    }
+
+}
+
+.memory-boot-status {
+    margin-top: 13px;
+
+    color: rgba(220,200,235,0.5);
+
+    font-size: 8px;
+    letter-spacing: 3px;
+}
+
+/* =========================================================
+   MAIN MEMORY GALAXY
+   ========================================================= */
+
+.memory-main {
+    position: absolute;
+    inset: 0;
+
+    overflow: auto;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 1s ease,
+        visibility 1s ease;
+}
+
+.memory-main.memory-main-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.memory-header {
+    position: relative;
+
+    z-index: 10;
+
+    padding-top: 82px;
+
+    text-align: center;
+
+    pointer-events: none;
+}
+
+.memory-eyebrow {
+    margin: 0 0 12px;
+
+    color: rgba(220,175,255,0.62);
+
+    font-size: 8px;
+    letter-spacing: 5px;
+}
+
+.memory-header h2 {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: clamp(32px, 7vw, 62px);
+
+    letter-spacing: 6px;
+
+    text-shadow:
+        0 0 15px rgba(255,255,255,0.4),
+        0 0 35px rgba(180,80,255,0.85),
+        0 0 75px rgba(140,50,255,0.4);
+}
+
+.memory-intro {
+    margin: 12px 0 0;
+
+    color: rgba(225,205,240,0.55);
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+}
+
+/* =========================================================
+   CONSTELLATION
+   ========================================================= */
+
+.memory-constellation {
+    position: relative;
+
+    width: min(900px, 95vw);
+    height: min(650px, 68vh);
+
+    min-height: 540px;
+
+    margin: 0 auto;
+}
+
+.memory-core {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: 185px;
+    height: 185px;
+
+    transform:
+        translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(180,90,255,0.18),
+            rgba(90,30,150,0.08) 45%,
+            transparent 70%
+        );
+
+    box-shadow:
+        0 0 35px rgba(170,80,255,0.35),
+        0 0 100px rgba(120,40,255,0.18);
+}
+
+.memory-core-inner {
+    position: relative;
+
+    z-index: 5;
+
+    width: 95px;
+    height: 95px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(225,175,255,0.6);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(150,65,255,0.35),
+            rgba(25,7,45,0.8)
+        );
+
+    box-shadow:
+        inset 0 0 30px rgba(190,100,255,0.25),
+        0 0 25px rgba(190,100,255,0.5);
+}
+
+.memory-core-inner span {
+    color: rgba(235,210,255,0.65);
+
+    font-size: 7px;
+    letter-spacing: 3px;
+}
+
+.memory-core-inner strong {
+    margin-top: 4px;
+
+    color: #fff;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    text-shadow:
+        0 0 15px rgba(220,160,255,0.9);
+}
+
+.memory-core-orbit {
+    position: absolute;
+
+    border: 1px solid rgba(200,140,255,0.2);
+
+    border-radius: 50%;
+}
+
+.orbit-one {
+    width: 250px;
+    height: 100px;
+
+    transform:
+        rotate(15deg);
+
+    animation:
+        coreOrbitSpin 12s linear infinite;
+}
+
+.orbit-two {
+    width: 290px;
+    height: 130px;
+
+    transform:
+        rotate(-30deg);
+
+    animation:
+        coreOrbitSpinReverse 16s linear infinite;
+}
+
+.orbit-three {
+    width: 340px;
+    height: 170px;
+
+    transform:
+        rotate(55deg);
+
+    animation:
+        coreOrbitSpin 20s linear infinite;
+}
+
+@keyframes coreOrbitSpin {
+
+    from {
+        transform:
+            rotate(15deg);
+    }
+
+    to {
+        transform:
+            rotate(375deg);
+    }
+
+}
+
+@keyframes coreOrbitSpinReverse {
+
+    from {
+        transform:
+            rotate(-30deg);
+    }
+
+    to {
+        transform:
+            rotate(-390deg);
+    }
+
+}
+
+/* =========================================================
+   MEMORY FRAGMENTS
+   ========================================================= */
+
+.memory-fragment {
+    position: absolute;
+
+    z-index: 5;
+
+    width: 125px;
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    text-align: center;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.4s ease;
+}
+
+.memory-fragment:hover {
+    z-index: 20;
+
+    filter:
+        drop-shadow(
+            0 0 18px rgba(200,120,255,0.7)
+        );
+}
+
+.fragment-image {
+    position: relative;
+
+    display: block;
+
+    width: 115px;
+    height: 85px;
+
+    padding: 4px;
+
+    border: 1px solid rgba(215,165,255,0.45);
+
+    border-radius: 7px;
+
+    background:
+        rgba(20,6,38,0.75);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,0.4),
+        0 0 12px rgba(150,70,255,0.18);
+
+    backdrop-filter: blur(5px);
+
+    transition:
+        transform 0.5s ease,
+        border-color 0.4s ease;
+}
+
+.fragment-image::after {
+    content: "";
+
+    position: absolute;
+    inset: 4px;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent 25%,
+            rgba(255,255,255,0.18) 50%,
+            transparent 70%
+        );
+
+    transform:
+        translateX(-130%);
+
+    transition:
+        transform 0.8s ease;
+
+    pointer-events: none;
+}
+
+.memory-fragment:hover .fragment-image {
+    transform:
+        scale(1.14)
+        rotate(0deg);
+
+    border-color:
+        rgba(240,200,255,0.9);
+}
+
+.memory-fragment:hover .fragment-image::after {
+    transform:
+        translateX(130%);
+}
+
+.fragment-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+}
+
+.fragment-label {
+    display: block;
+
+    margin-top: 7px;
+
+    color: rgba(225,195,245,0.65);
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+}
+
+/* Fragment positions */
+
+.fragment-01 {
+    top: 5%;
+    left: 36%;
+
+    transform: rotate(-7deg);
+}
+
+.fragment-02 {
+    top: 8%;
+    right: 21%;
+
+    transform: rotate(6deg);
+}
+
+.fragment-03 {
+    top: 29%;
+    right: 3%;
+
+    transform: rotate(8deg);
+}
+
+.fragment-04 {
+    bottom: 24%;
+    right: 5%;
+
+    transform: rotate(-5deg);
+}
+
+.fragment-05 {
+    bottom: 5%;
+    right: 25%;
+
+    transform: rotate(7deg);
+}
+
+.fragment-06 {
+    bottom: 2%;
+    left: 38%;
+
+    transform: rotate(-6deg);
+}
+
+.fragment-07 {
+    bottom: 8%;
+    left: 19%;
+
+    transform: rotate(5deg);
+}
+
+.fragment-08 {
+    bottom: 27%;
+    left: 3%;
+
+    transform: rotate(-8deg);
+}
+
+.fragment-09 {
+    top: 28%;
+    left: 2%;
+
+    transform: rotate(6deg);
+}
+
+.fragment-10 {
+    top: 8%;
+    left: 18%;
+
+    transform: rotate(-5deg);
+}
+
+.fragment-11 {
+    top: 44%;
+    right: 2%;
+
+    transform: rotate(6deg);
+}
+
+.fragment-12 {
+    top: 44%;
+    left: 1%;
+
+    transform: rotate(-7deg);
+}
+
+.memory-hint {
+    position: relative;
+
+    z-index: 10;
+
+    margin: -10px 0 30px;
+
+    text-align: center;
+
+    color: rgba(205,175,225,0.42);
+
+    font-size: 7px;
+
+    letter-spacing: 3px;
+}
+
+/* =========================================================
+   CINEMATIC VIEWER
+   ========================================================= */
+
+.memory-viewer {
+    position: fixed;
+    inset: 0;
+
+    z-index: 200;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    background:
+        rgba(3,1,10,0.94);
+
+    backdrop-filter:
+        blur(18px);
+
+    transition:
+        opacity 0.6s ease,
+        visibility 0.6s ease;
+}
+
+.memory-viewer.viewer-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.viewer-background {
+    position: absolute;
+    inset: -50px;
+
+    overflow: hidden;
+
+    opacity: 0.22;
+
+    filter:
+        blur(35px);
+
+    transform:
+        scale(1.15);
+}
+
+.viewer-background img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.viewer-background::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        rgba(8,2,18,0.72);
+}
+
+/* HUD */
+
+.viewer-hud {
+    position: absolute;
+
+    top: 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    color: rgba(220,180,245,0.5);
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+}
+
+.viewer-hud strong {
+    color: rgba(240,210,255,0.8);
+
+    font-size: 8px;
+}
+
+.hud-top-left {
+    left: 30px;
+}
+
+.hud-top-right {
+    right: 30px;
+
+    text-align: right;
+}
+
+.memory-viewer-close {
+    position: absolute;
+
+    top: 23px;
+    right: 28px;
+
+    z-index: 20;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid rgba(220,170,255,0.35);
+
+    border-radius: 50%;
+
+    background:
+        rgba(30,8,50,0.55);
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.memory-viewer-close:hover {
+    transform:
+        rotate(90deg);
+
+    border-color:
+        rgba(240,200,255,0.9);
+}
+
+/* Viewer content */
+
+.memory-viewer-content {
+    position: relative;
+
+    z-index: 10;
+
+    width: min(920px, 88vw);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 45px;
+}
+
+.viewer-photo-frame {
+    position: relative;
+
+    width: min(500px, 55vw);
+    max-height: 72vh;
+
+    padding: 7px;
+
+    border: 1px solid rgba(225,175,255,0.5);
+
+    background:
+        rgba(20,5,35,0.55);
+
+    box-shadow:
+        0 0 35px rgba(150,60,255,0.28),
+        0 25px 80px rgba(0,0,0,0.6);
+
+    transform:
+        scale(0.85)
+        translateY(20px);
+
+    opacity: 0;
+
+    transition:
+        transform 0.8s cubic-bezier(.2,.8,.2,1),
+        opacity 0.8s ease;
+}
+
+.viewer-visible .viewer-photo-frame {
+    transform:
+        scale(1)
+        translateY(0);
+
+    opacity: 1;
+}
+
+.viewer-photo-frame img {
+    display: block;
+
+    width: 100%;
+    max-height: 70vh;
+
+    object-fit: contain;
+}
+
+.viewer-photo-scan {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    top: 0;
+
+    height: 2px;
+
+    z-index: 5;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #fff,
+            rgba(200,120,255,0.9),
+            transparent
+        );
+
+    box-shadow:
+        0 0 15px rgba(230,180,255,0.9);
+
+    animation:
+        viewerPhotoScan 3s linear infinite;
+}
+
+@keyframes viewerPhotoScan {
+
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 100%;
+    }
+
+}
+
+.viewer-info {
+    width: 220px;
+
+    text-align: left;
+}
+
+#memory-viewer-number {
+    color: rgba(235,200,255,0.85);
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+}
+
+.viewer-info-line {
+    width: 55px;
+    height: 1px;
+
+    margin: 16px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            #d9a8ff,
+            transparent
+        );
+}
+
+.viewer-info p {
+    margin: 0;
+
+    color: rgba(230,215,240,0.65);
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    letter-spacing: 1px;
+}
+
+.memory-replay-button {
+    margin-top: 25px;
+
+    padding: 12px 16px;
+
+    border: 1px solid rgba(210,150,255,0.4);
+
+    border-radius: 7px;
+
+    background:
+        rgba(50,15,75,0.4);
+
+    color: rgba(250,235,255,0.85);
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.memory-replay-button:hover {
+    transform:
+        translateY(-3px);
+
+    border-color:
+        rgba(240,200,255,0.9);
+
+    box-shadow:
+        0 0 20px rgba(190,100,255,0.3);
+}
+
+.memory-replay-button span {
+    margin-right: 7px;
+}
+
+/* Navigation */
+
+.memory-nav {
+    position: absolute;
+
+    top: 50%;
+
+    z-index: 20;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 12px;
+
+    border: 0;
+
+    background: transparent;
+
+    color: rgba(235,210,250,0.65);
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transform:
+        translateY(-50%);
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.memory-nav:hover {
+    color: white;
+}
+
+.memory-prev {
+    left: 25px;
+}
+
+.memory-next {
+    right: 25px;
+}
+
+.memory-nav:hover.memory-prev {
+    transform:
+        translate(-5px, -50%);
+}
+
+.memory-nav:hover.memory-next {
+    transform:
+        translate(5px, -50%);
+}
+
+.memory-nav span {
+    font-size: 17px;
+}
+
+/* Counter */
+
+.memory-counter {
+    position: absolute;
+
+    left: 50%;
+    bottom: 28px;
+
+    z-index: 20;
+
+    width: min(260px, 55vw);
+
+    transform:
+        translateX(-50%);
+
+    text-align: center;
+}
+
+#memory-counter-text {
+    color: rgba(225,190,250,0.65);
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+}
+
+.memory-progress {
+    width: 100%;
+    height: 1px;
+
+    margin-top: 10px;
+
+    background:
+        rgba(210,160,255,0.15);
+}
+
+#memory-progress-bar {
+    display: block;
+
+    width: 8.33%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #b66cff,
+            #fff
+        );
+
+    box-shadow:
+        0 0 10px rgba(210,150,255,0.8);
+
+    transition:
+        width 0.5s ease;
+}
+
+/* Replay effect */
+
+.memory-viewer.memory-replaying
+    .viewer-photo-frame {
+    animation:
+        memoryReplay 1.6s ease;
+}
+
+@keyframes memoryReplay {
+
+    0% {
+        transform:
+            scale(1);
+        filter:
+            brightness(1);
+    }
+
+    35% {
+        transform:
+            scale(1.035);
+        filter:
+            brightness(1.25);
+    }
+
+    100% {
+        transform:
+            scale(1);
+        filter:
+            brightness(1);
+    }
+
+}
+
+/* =========================================================
+   ENDING
+   ========================================================= */
+
+.memory-ending {
+    position: absolute;
+    inset: 0;
+
+    z-index: 300;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 60%,
+            rgba(150,70,255,0.18),
+            transparent 35%
+        ),
+        #05020d;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 1s ease,
+        visibility 1s ease;
+}
+
+.memory-ending.ending-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.ending-stars {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,0.8) 1px,
+            transparent 1.5px
+        );
+
+    background-size:
+        110px 110px;
+
+    opacity: 0.5;
+
+    animation:
+        endingStarsMove 18s linear infinite;
+}
+
+@keyframes endingStarsMove {
+
+    from {
+        transform:
+            translateY(0);
+    }
+
+    to {
+        transform:
+            translateY(-110px);
+    }
+
+}
+
+.ending-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(650px, 88%);
+}
+
+.ending-symbol {
+    display: block;
+
+    margin-bottom: 25px;
+
+    color: #d7a6ff;
+
+    font-size: 25px;
+
+    text-shadow:
+        0 0 25px rgba(210,140,255,0.8);
+}
+
+.ending-content p {
+    margin: 5px 0;
+
+    color: rgba(230,210,245,0.55);
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+}
+
+.ending-content h2 {
+    margin: 25px 0 35px;
+
+    color: #fff;
+
+    font-size: clamp(22px, 5vw, 42px);
+
+    line-height: 1.45;
+
+    letter-spacing: 3px;
+
+    font-weight: 500;
+
+    text-shadow:
+        0 0 25px rgba(180,90,255,0.7);
+}
+
+.memory-ending-back {
+    padding: 14px 22px;
+
+    border: 1px solid rgba(215,165,255,0.45);
+
+    border-radius: 8px;
+
+    background:
+        rgba(45,12,70,0.45);
+
+    color: rgba(250,235,255,0.85);
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.memory-ending-back:hover {
+    transform:
+        translateY(-3px);
+
+    border-color:
+        rgba(240,200,255,0.95);
+
+    box-shadow:
+        0 0 25px rgba(190,100,255,0.3);
+}
+
+.memory-ending-back span {
+    margin-left: 12px;
+
+    font-size: 15px;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .memory-header {
+        padding-top: 80px;
+    }
+
+    .memory-header h2 {
+        letter-spacing: 4px;
+    }
+
+    .memory-intro {
+        font-size: 10px;
+    }
+
+    .memory-constellation {
+        width: 100vw;
+        height: 570px;
+
+        min-height: 570px;
+
+        transform:
+            scale(0.82);
+
+        transform-origin:
+            center top;
+
+        margin-bottom: -80px;
+    }
+
+    .memory-core {
+        width: 155px;
+        height: 155px;
+    }
+
+    .memory-core-inner {
+        width: 80px;
+        height: 80px;
+    }
+
+    .memory-fragment {
+        width: 105px;
+    }
+
+    .fragment-image {
+        width: 98px;
+        height: 72px;
+    }
+
+    .fragment-label {
+        font-size: 6px;
+    }
+
+    .fragment-01 {
+        top: 2%;
+        left: 35%;
+    }
+
+    .fragment-02 {
+        top: 7%;
+        right: 12%;
+    }
+
+    .fragment-03 {
+        top: 28%;
+        right: 0;
+    }
+
+    .fragment-04 {
+        bottom: 25%;
+        right: 0;
+    }
+
+    .fragment-05 {
+        bottom: 4%;
+        right: 13%;
+    }
+
+    .fragment-06 {
+        bottom: 0;
+        left: 36%;
+    }
+
+    .fragment-07 {
+        bottom: 7%;
+        left: 10%;
+    }
+
+    .fragment-08 {
+        bottom: 27%;
+        left: 0;
+    }
+
+    .fragment-09 {
+        top: 29%;
+        left: 0;
+    }
+
+    .fragment-10 {
+        top: 7%;
+        left: 11%;
+    }
+
+    .fragment-11 {
+        top: 43%;
+        right: 0;
+    }
+
+    .fragment-12 {
+        top: 43%;
+        left: 0;
+    }
+
+    .memory-viewer-content {
+        width: 92vw;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .viewer-photo-frame {
+        width: min(82vw, 430px);
+
+        max-height: 55vh;
+    }
+
+    .viewer-photo-frame img {
+        max-height: 53vh;
+    }
+
+    .viewer-info {
+        width: 82vw;
+
+        text-align: center;
+    }
+
+    .viewer-info-line {
+        margin:
+            12px auto;
+    }
+
+    .viewer-info p {
+        font-size: 10px;
+    }
+
+    .memory-replay-button {
+        margin-top: 12px;
+    }
+
+    .memory-nav {
+        top: auto;
+        bottom: 70px;
+    }
+
+    .memory-prev {
+        left: 12px;
+    }
+
+    .memory-next {
+        right: 12px;
+    }
+
+    .memory-counter {
+        bottom: 25px;
+    }
+
+    .viewer-hud {
+        top: 18px;
+    }
+
+    .hud-top-left {
+        left: 15px;
+    }
+
+    .hud-top-right {
+        right: 65px;
+    }
+
+    .memory-viewer-close {
+        top: 14px;
+        right: 15px;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .memory-constellation {
+        transform:
+            scale(0.72);
+
+        margin-bottom: -145px;
+    }
+
+    .memory-header {
+        padding-top: 78px;
+    }
+
+    .memory-eyebrow {
+        font-size: 7px;
+        letter-spacing: 3px;
+    }
+
+    .memory-hint {
+        margin-top: -20px;
+    }
+
+}
+
+/* =========================================================
+   STEP 09 — WHY YOU'RE SPECIAL
+   ========================================================= */
+
+.special-world {
+    position: fixed;
+    inset: 0;
+    z-index: 820;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 50% 30%,
+            rgba(170, 80, 255, 0.16),
+            transparent 30%
+        ),
+        #080414;
+
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease;
+}
+
+.special-world.special-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Background */
+
+.special-background {
+    position: fixed;
+    inset: 0;
+
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.special-stars {
+    position: absolute;
+    inset: -100px;
+
+    background-image:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,0.8) 1px,
+            transparent 1.5px
+        ),
+        radial-gradient(
+            circle,
+            rgba(210,160,255,0.55) 1px,
+            transparent 1.5px
+        );
+
+    background-size:
+        100px 100px,
+        165px 165px;
+
+    background-position:
+        20px 30px,
+        70px 90px;
+
+    animation: specialStarsDrift 25s linear infinite;
+}
+
+@keyframes specialStarsDrift {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100px);
+    }
+
+}
+
+.special-orb {
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter: blur(90px);
+
+    pointer-events: none;
+}
+
+.special-orb-one {
+    width: 420px;
+    height: 420px;
+
+    top: -170px;
+    left: -130px;
+
+    background: rgba(130, 55, 255, 0.32);
+
+    animation: specialOrbFloatOne 9s ease-in-out infinite;
+}
+
+.special-orb-two {
+    width: 380px;
+    height: 380px;
+
+    right: -140px;
+    bottom: -130px;
+
+    background: rgba(255, 70, 190, 0.22);
+
+    animation: specialOrbFloatTwo 11s ease-in-out infinite;
+}
+
+@keyframes specialOrbFloatOne {
+
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(70px, 40px);
+    }
+
+}
+
+@keyframes specialOrbFloatTwo {
+
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-60px, -40px);
+    }
+
+}
+
+/* Back */
+
+.special-back-button {
+    position: fixed;
+
+    top: 25px;
+    left: 25px;
+
+    z-index: 20;
+
+    padding: 11px 16px;
+
+    border: 1px solid rgba(210,150,255,0.35);
+    border-radius: 8px;
+
+    background: rgba(25,8,48,0.55);
+
+    color: rgba(245,225,255,0.82);
+
+    font-size: 9px;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(12px);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.special-back-button span {
+    margin-right: 7px;
+}
+
+.special-back-button:hover {
+    transform: translateX(-4px);
+
+    border-color: rgba(230,180,255,0.9);
+}
+
+/* Main content */
+
+.special-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(760px, 90%);
+
+    margin: 0 auto;
+
+    padding:
+        105px
+        20px
+        60px;
+}
+
+.special-eyebrow {
+    margin: 0;
+
+    text-align: center;
+
+    color: rgba(220,180,255,0.62);
+
+    font-size: 9px;
+    letter-spacing: 5px;
+}
+
+.special-symbol {
+    margin: 22px auto 12px;
+
+    text-align: center;
+
+    color: rgba(240,190,255,0.95);
+
+    font-size: 38px;
+
+    text-shadow:
+        0 0 15px rgba(220,130,255,0.7),
+        0 0 40px rgba(170,70,255,0.5);
+
+    animation: specialSymbolPulse 3s ease-in-out infinite;
+}
+
+@keyframes specialSymbolPulse {
+
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.75;
+    }
+
+    50% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+
+}
+
+.special-title {
+    margin: 0;
+
+    text-align: center;
+
+    color: #fff;
+
+    font-size: clamp(38px, 8vw, 72px);
+
+    line-height: 0.95;
+
+    letter-spacing: 6px;
+
+    text-shadow:
+        0 0 15px rgba(255,255,255,0.4),
+        0 0 38px rgba(175,80,255,0.8),
+        0 0 75px rgba(140,50,255,0.4);
+}
+
+.special-title span {
+    color: rgba(225,190,255,0.88);
+}
+
+.special-line {
+    width: 100px;
+    height: 1px;
+
+    margin: 25px auto 35px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(230,180,255,0.9),
+        transparent
+    );
+
+    box-shadow: 0 0 12px rgba(220,150,255,0.65);
+}
+
+/* Reasons */
+
+.special-reasons {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.special-reason {
+    display: grid;
+
+    grid-template-columns: 48px 1fr;
+
+    gap: 17px;
+
+    padding: 18px 20px;
+
+    border: 1px solid rgba(205,150,255,0.18);
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            110deg,
+            rgba(55,20,80,0.38),
+            rgba(20,7,35,0.28)
+        );
+
+    backdrop-filter: blur(12px);
+
+    transform: translateX(-20px);
+
+    opacity: 0;
+
+    transition:
+        transform 0.6s ease,
+        opacity 0.6s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+.special-world.special-visible .special-reason {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.special-world.special-visible .special-reason:nth-child(1) {
+    transition-delay: 0.25s;
+}
+
+.special-world.special-visible .special-reason:nth-child(2) {
+    transition-delay: 0.45s;
+}
+
+.special-world.special-visible .special-reason:nth-child(3) {
+    transition-delay: 0.65s;
+}
+
+.special-world.special-visible .special-reason:nth-child(4) {
+    transition-delay: 0.85s;
+}
+
+.special-reason:hover {
+    border-color: rgba(220,170,255,0.5);
+
+    background:
+        linear-gradient(
+            110deg,
+            rgba(70,25,100,0.48),
+            rgba(25,8,45,0.35)
+        );
+}
+
+.special-index {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    border: 1px solid rgba(215,165,255,0.25);
+    border-radius: 50%;
+
+    color: rgba(225,185,255,0.75);
+
+    font-size: 9px;
+    letter-spacing: 1px;
+
+    box-shadow:
+        inset 0 0 15px rgba(180,90,255,0.08);
+}
+
+.special-reason h3 {
+    margin: 0 0 7px;
+
+    color: rgba(255,255,255,0.9);
+
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.special-reason p {
+    margin: 0;
+
+    color: rgba(225,210,238,0.62);
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+/* Continue */
+
+.special-continue-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+
+    margin: 35px auto 0;
+
+    padding: 13px 20px;
+
+    border: 1px solid rgba(210,150,255,0.4);
+    border-radius: 8px;
+
+    background: rgba(40,12,65,0.42);
+
+    color: rgba(250,235,255,0.85);
+
+    font-size: 9px;
+    letter-spacing: 2.5px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(10px);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.special-continue-button:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(235,190,255,0.9);
+
+    box-shadow:
+        0 0 20px rgba(190,100,255,0.25);
+}
+
+.special-continue-button span:last-child {
+    font-size: 16px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .special-back-button {
+        top: 17px;
+        left: 17px;
+
+        padding: 9px 11px;
+
+        font-size: 7px;
+        letter-spacing: 1.5px;
+    }
+
+    .special-content {
+        padding:
+            95px
+            12px
+            45px;
+    }
+
+    .special-eyebrow {
+        font-size: 7px;
+        letter-spacing: 3px;
+    }
+
+    .special-symbol {
+        font-size: 32px;
+    }
+
+    .special-title {
+        letter-spacing: 4px;
+    }
+
+    .special-reason {
+        grid-template-columns: 38px 1fr;
+
+        gap: 12px;
+
+        padding: 15px;
+    }
+
+    .special-index {
+        width: 32px;
+        height: 32px;
+
+        font-size: 8px;
+    }
+
+    .special-reason h3 {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .special-reason p {
+        font-size: 12px;
+    }
+
+}
+/* =========================================================
+   STEP 10 — CLASSIFIED ARCHIVE
+   ========================================================= */
+
+.classified-world {
+    position: fixed;
+    inset: 0;
+
+    z-index: 820;
+
+    overflow: hidden;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(110,45,180,0.12),
+            transparent 40%
+        ),
+        #04020a;
+
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease;
+}
+
+.classified-world.classified-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* Background */
+
+.classified-bg {
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+}
+
+.classified-grid {
+    position: absolute;
+    inset: -50%;
+
+    background-image:
+        linear-gradient(
+            rgba(190,120,255,0.05) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(190,120,255,0.05) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        55px 55px;
+
+    transform:
+        perspective(500px)
+        rotateX(62deg);
+
+    animation:
+        classifiedGridMove 12s linear infinite;
+}
+
+@keyframes classifiedGridMove {
+
+    from {
+        transform:
+            perspective(500px)
+            rotateX(62deg)
+            translateY(0);
+    }
+
+    to {
+        transform:
+            perspective(500px)
+            rotateX(62deg)
+            translateY(55px);
+    }
+
+}
+
+.classified-scan {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    top: -5%;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(215,160,255,0.8),
+            transparent
+        );
+
+    box-shadow:
+        0 0 20px rgba(190,110,255,0.7);
+
+    opacity: 0.35;
+
+    animation:
+        classifiedScanMove 7s linear infinite;
+}
+
+@keyframes classifiedScanMove {
+
+    from {
+        top: -5%;
+    }
+
+    to {
+        top: 105%;
+    }
+
+}
+
+
+/* Back button */
+
+.classified-back-button {
+    position: absolute;
+
+    top: 24px;
+    left: 24px;
+
+    z-index: 50;
+
+    padding: 11px 16px;
+
+    border:
+        1px solid
+        rgba(210,160,255,0.3);
+
+    border-radius: 8px;
+
+    background:
+        rgba(20,6,35,0.65);
+
+    color:
+        rgba(245,225,255,0.8);
+
+    font-size: 9px;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    backdrop-filter:
+        blur(12px);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.classified-back-button:hover {
+    transform:
+        translateX(-4px);
+
+    border-color:
+        rgba(240,200,255,0.9);
+}
+
+.classified-back-button span {
+    margin-right: 7px;
+}
+
+
+/* =========================================================
+   SECURITY
+   ========================================================= */
+
+.classified-security {
+    position: absolute;
+    inset: 0;
+
+    z-index: 20;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease;
+}
+
+.classified-security.security-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.security-symbol {
+    position: relative;
+
+    width: 90px;
+    height: 90px;
+
+    margin-bottom: 30px;
+}
+
+.security-symbol span {
+    position: absolute;
+
+    inset: 0;
+
+    border:
+        1px solid
+        rgba(205,150,255,0.5);
+
+    border-radius: 50%;
+}
+
+.security-symbol span:nth-child(1) {
+    animation:
+        securitySpin 5s linear infinite;
+}
+
+.security-symbol span:nth-child(2) {
+    inset: 12px;
+
+    border-style: dashed;
+
+    animation:
+        securitySpinReverse 7s linear infinite;
+}
+
+.security-symbol span:nth-child(3) {
+    inset: 27px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(220,170,255,0.9),
+            transparent 70%
+        );
+
+    border: 0;
+
+    box-shadow:
+        0 0 25px
+        rgba(210,140,255,0.7);
+}
+
+@keyframes securitySpin {
+
+    to {
+        transform:
+            rotate(360deg);
+    }
+
+}
+
+@keyframes securitySpinReverse {
+
+    to {
+        transform:
+            rotate(-360deg);
+    }
+
+}
+
+.classified-eyebrow {
+    margin: 0 0 12px;
+
+    color:
+        rgba(220,175,255,0.6);
+
+    font-size: 8px;
+    letter-spacing: 5px;
+}
+
+.classified-security h2 {
+    margin: 0;
+
+    color: white;
+
+    font-size:
+        clamp(38px, 9vw, 72px);
+
+    letter-spacing: 8px;
+
+    text-shadow:
+        0 0 20px
+        rgba(190,100,255,0.8),
+        0 0 55px
+        rgba(130,50,255,0.5);
+}
+
+.classified-status {
+    margin-top: 14px;
+
+    color:
+        rgba(230,210,245,0.45);
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+}
+
+.classified-loading {
+    width:
+        min(280px, 65vw);
+
+    height: 2px;
+
+    margin-top: 28px;
+
+    overflow: hidden;
+
+    background:
+        rgba(210,160,255,0.12);
+}
+
+.classified-loading span {
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #d7a4ff,
+            white
+        );
+
+    box-shadow:
+        0 0 15px
+        rgba(215,160,255,0.9);
+
+    animation:
+        classifiedLoading 2.2s ease forwards;
+}
+
+@keyframes classifiedLoading {
+
+    to {
+        width: 100%;
+    }
+
+}
+
+.classified-loading-text {
+    margin-top: 12px;
+
+    color:
+        rgba(220,195,235,0.45);
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================================================
+   CLASSIFIED MAIN
+   ========================================================= */
+
+.classified-main {
+    position: absolute;
+    inset: 0;
+
+    z-index: 10;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.8s ease,
+        visibility 0.8s ease;
+}
+
+.classified-main.main-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.classified-top-label {
+    position: absolute;
+
+    top: 82px;
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    color:
+        rgba(220,175,255,0.45);
+
+    font-size: 8px;
+
+    letter-spacing: 4px;
+
+    white-space: nowrap;
+}
+
+.classified-card {
+    width:
+        min(430px, 86vw);
+
+    padding:
+        28px 28px 32px;
+
+    border:
+        1px solid
+        rgba(215,165,255,0.35);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(40,12,60,0.72),
+            rgba(10,3,20,0.82)
+        );
+
+    box-shadow:
+        0 0 40px
+        rgba(150,65,255,0.15),
+        inset 0 0 40px
+        rgba(170,80,255,0.04);
+
+    backdrop-filter:
+        blur(16px);
+
+    text-align: center;
+}
+
+.classified-card-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-bottom: 15px;
+
+    border-bottom:
+        1px solid
+        rgba(215,165,255,0.12);
+
+    color:
+        rgba(220,190,240,0.45);
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+}
+
+.classified-lock-icon {
+    margin-top: 30px;
+
+    font-size: 35px;
+
+    filter:
+        drop-shadow(
+            0 0 15px
+            rgba(210,140,255,0.6)
+        );
+}
+
+.classified-file-label {
+    margin:
+        20px 0 7px;
+
+    color:
+        rgba(220,180,240,0.5);
+
+    font-size: 7px;
+
+    letter-spacing: 3px;
+}
+
+.classified-card h2 {
+    margin: 0;
+
+    color: white;
+
+    font-size: 38px;
+
+    letter-spacing: 7px;
+
+    text-shadow:
+        0 0 20px
+        rgba(190,100,255,0.7);
+}
+
+.classified-divider {
+    width: 50px;
+    height: 1px;
+
+    margin:
+        22px auto;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #d7a4ff,
+            transparent
+        );
+}
+
+.classified-description {
+    max-width: 330px;
+
+    margin: 0 auto;
+
+    color:
+        rgba(225,210,235,0.55);
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+.classified-decrypt-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 28px;
+
+    padding:
+        13px 20px;
+
+    border:
+        1px solid
+        rgba(215,165,255,0.45);
+
+    border-radius: 7px;
+
+    background:
+        rgba(75,20,105,0.35);
+
+    color:
+        rgba(250,235,255,0.9);
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.classified-decrypt-button:hover {
+    transform:
+        translateY(-3px);
+
+    border-color:
+        rgba(245,210,255,0.95);
+
+    box-shadow:
+        0 0 25px
+        rgba(190,100,255,0.35);
+}
+
+
+/* =========================================================
+   DECRYPTED REVEAL
+   ========================================================= */
+
+.classified-reveal {
+    position: absolute;
+    inset: 0;
+
+    z-index: 30;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(130,50,190,0.15),
+            transparent 45%
+        );
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform:
+        scale(0.96);
+
+    transition:
+        opacity 0.9s ease,
+        visibility 0.9s ease,
+        transform 0.9s ease;
+}
+
+.classified-reveal.reveal-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform:
+        scale(1);
+}
+
+.reveal-symbol {
+    color:
+        #d9a8ff;
+
+    font-size: 26px;
+
+    text-shadow:
+        0 0 25px
+        rgba(215,150,255,0.9);
+
+    animation:
+        revealPulse 2s ease-in-out infinite;
+}
+
+@keyframes revealPulse {
+
+    0%, 100% {
+        opacity: 0.6;
+        transform: scale(0.9);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+
+}
+
+.reveal-label {
+    margin:
+        20px 0 8px;
+
+    color:
+        rgba(220,175,255,0.55);
+
+    font-size: 8px;
+
+    letter-spacing: 4px;
+}
+
+.classified-reveal h2 {
+    margin: 0;
+
+    color: white;
+
+    font-size:
+        clamp(28px, 6vw, 48px);
+
+    letter-spacing: 5px;
+
+    text-shadow:
+        0 0 25px
+        rgba(190,100,255,0.8);
+}
+
+.reveal-line {
+    width: 60px;
+    height: 1px;
+
+    margin:
+        22px auto;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #d9a8ff,
+            transparent
+        );
+}
+
+.reveal-message {
+    width:
+        min(560px, 88vw);
+
+    margin: 0;
+
+    color:
+        rgba(235,220,245,0.72);
+
+    font-size:
+        clamp(13px, 2vw, 16px);
+
+    line-height: 2;
+
+    letter-spacing: 0.4px;
+}
+
+.reveal-small {
+    margin-top: 25px;
+
+    color:
+        rgba(210,180,225,0.38);
+
+    font-size: 7px;
+
+    letter-spacing: 3px;
+}
+
+.classified-final-button {
+    margin-top: 30px;
+
+    padding:
+        14px 22px;
+
+    border:
+        1px solid
+        rgba(215,165,255,0.45);
+
+    border-radius: 8px;
+
+    background:
+        rgba(55,15,80,0.4);
+
+    color:
+        rgba(250,235,255,0.9);
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.classified-final-button:hover {
+    transform:
+        translateY(-3px);
+
+    border-color:
+        rgba(245,210,255,0.95);
+
+    box-shadow:
+        0 0 25px
+        rgba(190,100,255,0.35);
+}
+
+.classified-final-button span {
+    margin-left: 12px;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .classified-top-label {
+        top: 78px;
+
+        font-size: 6px;
+
+        letter-spacing: 3px;
+    }
+
+    .classified-card {
+        padding:
+            24px 20px 28px;
+    }
+
+    .classified-card h2 {
+        font-size: 32px;
+    }
+
+    .classified-description {
+        font-size: 10px;
+    }
+
+    .reveal-message {
+        font-size: 12px;
+
+        line-height: 1.9;
+    }
+
+    .reveal-small {
+        font-size: 6px;
+
+        line-height: 1.7;
+    }
+
+}
+/* =========================================================
+   STEP 11 — THE BIRTHDAY MOMENT
+   ========================================================= */
+
+.birthday-moment {
+    position: fixed;
+    inset: 0;
+    z-index: 9000;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at center, rgba(132, 45, 255, 0.18), transparent 35%),
+        #05020d;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+.birthday-moment.birthday-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.birthday-moment-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.birthday-stars {
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(circle, rgba(255,255,255,.9) 1px, transparent 1.5px),
+        radial-gradient(circle, rgba(190,130,255,.65) 1px, transparent 1.5px);
+    background-size: 95px 95px, 145px 145px;
+    background-position: 15px 20px, 60px 80px;
+    animation: birthdayStarsMove 25s linear infinite;
+    opacity: .75;
+}
+
+.birthday-nebula {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background:
+        radial-gradient(circle,
+        rgba(177, 74, 255, .28) 0%,
+        rgba(98, 35, 190, .13) 30%,
+        transparent 70%);
+    filter: blur(20px);
+    animation: birthdayNebulaPulse 5s ease-in-out infinite;
+}
+
+.birthday-orbit {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 1px solid rgba(190, 110, 255, .18);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(-18deg);
+}
+
+.birthday-orbit-one {
+    width: 580px;
+    height: 190px;
+    animation: birthdayOrbitSpin 12s linear infinite;
+}
+
+.birthday-orbit-two {
+    width: 760px;
+    height: 260px;
+    animation: birthdayOrbitSpinReverse 18s linear infinite;
+}
+
+.birthday-particles {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,.8) 0 1px, transparent 2px),
+        radial-gradient(circle at 80% 65%, rgba(220,170,255,.8) 0 1px, transparent 2px),
+        radial-gradient(circle at 60% 20%, rgba(255,255,255,.7) 0 1px, transparent 2px),
+        radial-gradient(circle at 35% 80%, rgba(200,130,255,.7) 0 1px, transparent 2px);
+    animation: birthdayParticleFloat 7s ease-in-out infinite alternate;
+}
+
+/* Intro */
+
+.birthday-intro {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+}
+
+.birthday-system-line,
+.birthday-system-line-two,
+.birthday-event-detected {
+    opacity: 0;
+}
+
+.birthday-system-line {
+    margin: 0 0 20px;
+    color: rgba(215, 170, 255, .65);
+    font-size: 11px;
+    letter-spacing: 4px;
+    animation: birthdayIntroText 1s ease forwards;
+}
+
+.birthday-system-line-two {
+    color: rgba(255,255,255,.85);
+    font-size: clamp(15px, 3vw, 22px);
+    letter-spacing: 3px;
+    animation: birthdayIntroText 1s ease .8s forwards;
+}
+
+.birthday-event-detected {
+    margin-top: 35px;
+    padding: 10px 18px;
+    border: 1px solid rgba(188, 100, 255, .35);
+    background: rgba(90, 20, 150, .12);
+    color: rgba(220, 175, 255, .85);
+    font-size: 10px;
+    letter-spacing: 3px;
+    animation: birthdayIntroText 1s ease 1.6s forwards;
+}
+
+.detected-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: #d88cff;
+    box-shadow: 0 0 12px #d88cff;
+    animation: detectedPulse 1s infinite;
+}
+
+/* Celebration */
+
+.birthday-celebration {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(.94);
+}
+
+.birthday-celebration.birthday-celebration-active {
+    animation: birthdayCelebrationIn 1.5s ease forwards;
+}
+
+.birthday-light-burst {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(207, 126, 255, .5);
+    filter: blur(30px);
+    transform: translate(-50%, -50%);
+    animation: birthdayLightBurst 3s ease-out forwards;
+    pointer-events: none;
+}
+
+.birthday-eyebrow {
+    margin: 0 0 20px;
+    color: rgba(220, 175, 255, .75);
+    font-size: 10px;
+    letter-spacing: 5px;
+}
+
+.birthday-cake-symbol {
+    font-size: 48px;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 0 20px rgba(255, 150, 255, .6));
+    animation: cakeFloat 3s ease-in-out infinite;
+}
+
+.birthday-title {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    line-height: 1;
+}
+
+.birthday-title span {
+    font-size: clamp(22px, 5vw, 42px);
+    font-weight: 300;
+    letter-spacing: 7px;
+    color: rgba(255,255,255,.9);
+}
+
+.birthday-title strong {
+    font-size: clamp(48px, 12vw, 100px);
+    letter-spacing: 5px;
+    color: #fff;
+    text-shadow:
+        0 0 10px rgba(255,255,255,.8),
+        0 0 30px rgba(190,80,255,.8),
+        0 0 70px rgba(140,40,255,.55);
+    animation: nameGlow 3s ease-in-out infinite alternate;
+}
+
+.birthday-date {
+    margin-top: 22px;
+    color: rgba(220, 180, 255, .75);
+    font-size: 12px;
+    letter-spacing: 7px;
+}
+
+.birthday-level {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+    padding: 8px 18px;
+    border: 1px solid rgba(194, 110, 255, .35);
+    background: rgba(110, 35, 180, .1);
+    color: rgba(220, 180, 255, .7);
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+.birthday-level strong {
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 0 18px rgba(200,100,255,.8);
+}
+
+.birthday-subtitle {
+    max-width: 540px;
+    margin: 25px auto 0;
+    color: rgba(240,225,255,.7);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.birthday-song-button {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    padding: 14px 25px;
+    border: 1px solid rgba(213, 133, 255, .55);
+    border-radius: 4px;
+    background: rgba(120, 35, 180, .14);
+    color: #fff;
+    font-family: inherit;
+    font-size: 10px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    box-shadow:
+        0 0 25px rgba(160,70,255,.12),
+        inset 0 0 20px rgba(160,70,255,.06);
+    transition: .3s ease;
+}
+
+.birthday-song-button:hover {
+    transform: translateY(-3px);
+    border-color: rgba(230,180,255,.9);
+    box-shadow:
+        0 0 35px rgba(180,80,255,.3),
+        inset 0 0 25px rgba(160,70,255,.1);
+}
+
+.song-icon {
+    font-size: 11px;
+}
+
+.birthday-song-status {
+    margin-top: 12px;
+    color: rgba(200,170,220,.45);
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+/* Wish */
+
+.birthday-wish,
+.birthday-ending {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(.96);
+}
+
+.birthday-wish.wish-visible,
+.birthday-ending.ending-visible {
+    animation: birthdaySceneIn 1.2s ease forwards;
+}
+
+.wish-orb {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wish-orb-core {
+    position: absolute;
+    inset: 35px;
+    border-radius: 50%;
+    background: rgba(230,190,255,.95);
+    box-shadow:
+        0 0 20px rgba(230,190,255,.9),
+        0 0 60px rgba(180,80,255,.8),
+        0 0 120px rgba(150,50,255,.45);
+    animation: wishCorePulse 2s ease-in-out infinite;
+}
+
+.wish-orb-ring {
+    position: absolute;
+    inset: 5px;
+    border: 1px solid rgba(220,170,255,.35);
+    border-radius: 50%;
+    box-shadow: 0 0 35px rgba(180,80,255,.25);
+    animation: wishRingSpin 8s linear infinite;
+}
+
+.wish-label {
+    margin: 0 0 12px;
+    color: rgba(220,170,255,.6);
+    font-size: 9px;
+    letter-spacing: 4px;
+}
+
+.birthday-wish h2 {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(35px, 9vw, 70px);
+    letter-spacing: 7px;
+    text-shadow: 0 0 40px rgba(190,80,255,.55);
+}
+
+.wish-text {
+    margin: 22px 0 0;
+    color: rgba(235,215,255,.85);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.wish-instruction {
+    margin: 20px 0 0;
+    color: rgba(210,185,230,.55);
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.make-wish-button,
+.open-final-archive-button {
+    margin-top: 30px;
+    padding: 14px 24px;
+    border: 1px solid rgba(210,140,255,.5);
+    background: rgba(100,30,160,.14);
+    color: #fff;
+    font-family: inherit;
+    font-size: 10px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.make-wish-button:hover,
+.open-final-archive-button:hover {
+    transform: translateY(-3px);
+    border-color: rgba(240,200,255,.9);
+    box-shadow: 0 0 30px rgba(180,80,255,.3);
+}
+
+/* Ending */
+
+.birthday-ending h2 {
+    margin: 20px 0 0;
+    color: #fff;
+    font-size: clamp(28px, 7vw, 60px);
+    line-height: 1.25;
+    letter-spacing: 5px;
+    text-shadow: 0 0 35px rgba(180,70,255,.5);
+}
+
+.birthday-ending > p:not(.birthday-ending-label) {
+    margin-top: 18px;
+    color: rgba(220,190,235,.7);
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.birthday-ending-label {
+    margin: 0;
+    color: rgba(220,170,255,.6);
+    font-size: 9px;
+    letter-spacing: 4px;
+}
+
+/* Animations */
+
+@keyframes birthdayStarsMove {
+    from { transform: translateY(0); }
+    to { transform: translateY(100px); }
+}
+
+@keyframes birthdayNebulaPulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: .65; }
+    50% { transform: translate(-50%, -50%) scale(1.12); opacity: 1; }
+}
+
+@keyframes birthdayOrbitSpin {
+    from { transform: translate(-50%, -50%) rotate(-18deg); }
+    to { transform: translate(-50%, -50%) rotate(342deg); }
+}
+
+@keyframes birthdayOrbitSpinReverse {
+    from { transform: translate(-50%, -50%) rotate(25deg); }
+    to { transform: translate(-50%, -50%) rotate(-335deg); }
+}
+
+@keyframes birthdayParticleFloat {
+    from { transform: translateY(0); opacity: .5; }
+    to { transform: translateY(-25px); opacity: 1; }
+}
+
+@keyframes birthdayIntroText {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes detectedPulse {
+    0%, 100% { opacity: .35; }
+    50% { opacity: 1; }
+}
+
+@keyframes birthdayCelebrationIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(.94);
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+}
+
+@keyframes birthdayLightBurst {
+    0% {
+        width: 50px;
+        height: 50px;
+        opacity: .9;
+    }
+    100% {
+        width: 900px;
+        height: 900px;
+        opacity: 0;
+    }
+}
+
+@keyframes cakeFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+@keyframes nameGlow {
+    from { filter: brightness(1); }
+    to { filter: brightness(1.25); }
+}
+
+@keyframes birthdaySceneIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(.96);
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+}
+
+@keyframes wishCorePulse {
+    0%, 100% { transform: scale(.9); }
+    50% { transform: scale(1.15); }
+}
+
+@keyframes wishRingSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .birthday-title strong {
+        font-size: clamp(42px, 14vw, 72px);
+        letter-spacing: 3px;
+    }
+
+    .birthday-title span {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+
+    .birthday-date {
+        letter-spacing: 5px;
+    }
+
+    .birthday-orbit-one {
+        width: 400px;
+        height: 150px;
+    }
+
+    .birthday-orbit-two {
+        width: 520px;
+        height: 200px;
+    }
+
+    .birthday-subtitle {
+        font-size: 12px;
+        max-width: 330px;
+    }
+
+    .birthday-song-button {
+        padding: 13px 18px;
+    }
+
+    .birthday-wish h2 {
+        font-size: 34px;
+        letter-spacing: 4px;
+    }
+
+    .birthday-ending h2 {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+}
+/* =========================================================
+   STEP 12 — FINAL ARCHIVE
+   ========================================================= */
+
+.final-archive {
+    position: fixed;
+    inset: 0;
+    z-index: 15000;
+    overflow: hidden;
+    background: #010007;
+    color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    font-family: inherit;
+}
+
+.final-archive.final-active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* =========================
+   COSMIC BACKGROUND
+   ========================= */
+
+.final-cosmos,
+.final-deep-space,
+.final-nebula,
+.final-galaxy,
+.final-stars,
+.final-star-dust,
+.final-cosmic-glow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.final-deep-space {
+    background:
+        radial-gradient(circle at 50% 50%, rgba(67, 20, 105, 0.22), transparent 35%),
+        radial-gradient(circle at 20% 30%, rgba(28, 48, 100, 0.18), transparent 30%),
+        #010007;
+}
+
+.final-nebula {
+    filter: blur(55px);
+    opacity: 0.45;
+    mix-blend-mode: screen;
+}
+
+.final-nebula-one {
+    background:
+        radial-gradient(ellipse at 30% 45%,
+        rgba(124, 45, 190, 0.28),
+        transparent 55%);
+    transform: rotate(-18deg) scale(1.3);
+    animation: finalNebulaDriftOne 18s ease-in-out infinite alternate;
+}
+
+.final-nebula-two {
+    background:
+        radial-gradient(ellipse at 70% 55%,
+        rgba(38, 83, 170, 0.22),
+        transparent 52%);
+    transform: rotate(22deg) scale(1.25);
+    animation: finalNebulaDriftTwo 23s ease-in-out infinite alternate;
+}
+
+.final-nebula-three {
+    background:
+        radial-gradient(ellipse at 50% 80%,
+        rgba(183, 46, 154, 0.16),
+        transparent 50%);
+    animation: finalNebulaDriftThree 15s ease-in-out infinite alternate;
+}
+
+
+/* Distant galaxy */
+
+.final-galaxy {
+    width: 85vw;
+    height: 28vw;
+    min-height: 250px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-18deg);
+    border-radius: 50%;
+    opacity: 0.48;
+    filter: blur(1px);
+    background:
+        radial-gradient(
+            ellipse at center,
+            rgba(255,255,255,0.9) 0%,
+            rgba(203,174,255,0.45) 2%,
+            rgba(145,92,210,0.22) 10%,
+            rgba(96,48,160,0.11) 27%,
+            transparent 62%
+        );
+    box-shadow:
+        0 0 70px rgba(159, 87, 255, 0.18),
+        0 0 150px rgba(105, 55, 190, 0.12);
+    animation: finalGalaxyFloat 28s ease-in-out infinite alternate;
+}
+
+.final-galaxy::before,
+.final-galaxy::after {
+    content: "";
+    position: absolute;
+    inset: 10%;
+    border-radius: 50%;
+    border: 1px solid rgba(210, 180, 255, 0.08);
+}
+
+.final-galaxy::after {
+    inset: 22%;
+    border-color: rgba(255,255,255,0.05);
+}
+
+
+/* Stars */
+
+.final-stars {
+    background-repeat: repeat;
+}
+
+.final-stars-back {
+    opacity: 0.5;
+    background-image:
+        radial-gradient(circle, rgba(255,255,255,0.65) 0 1px, transparent 1.5px);
+    background-size: 83px 97px;
+    animation: finalStarsBack 35s linear infinite;
+}
+
+.final-stars-mid {
+    opacity: 0.7;
+    background-image:
+        radial-gradient(circle, rgba(255,255,255,0.85) 0 1px, transparent 1.7px),
+        radial-gradient(circle, rgba(196,170,255,0.65) 0 1px, transparent 1.6px);
+    background-size: 137px 113px, 191px 173px;
+    animation: finalStarsMid 24s linear infinite;
+}
+
+.final-stars-front {
+    opacity: 0.8;
+    background-image:
+        radial-gradient(circle, rgba(255,255,255,0.95) 0 1.2px, transparent 1.8px);
+    background-size: 227px 181px;
+    animation: finalStarsFront 18s linear infinite;
+}
+
+.final-star-dust {
+    background-image:
+        radial-gradient(circle at 12% 18%, rgba(255,255,255,0.8) 0 1px, transparent 2px),
+        radial-gradient(circle at 73% 24%, rgba(210,190,255,0.7) 0 1px, transparent 2px),
+        radial-gradient(circle at 41% 76%, rgba(255,255,255,0.65) 0 1px, transparent 2px),
+        radial-gradient(circle at 86% 81%, rgba(180,160,255,0.7) 0 1px, transparent 2px);
+    animation: finalDustPulse 5s ease-in-out infinite alternate;
+}
+
+.final-cosmic-glow {
+    background:
+        radial-gradient(circle at center,
+        rgba(142, 74, 220, 0.13),
+        transparent 35%);
+}
+
+
+/* =========================
+   COUNTDOWN
+   ========================= */
+
+.final-countdown,
+.final-ready,
+.final-birthday-message,
+.final-secret,
+.final-ps,
+.final-shutdown {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.final-countdown.final-scene-visible,
+.final-ready.final-scene-visible,
+.final-birthday-message.final-scene-visible,
+.final-secret.final-scene-visible,
+.final-ps.final-scene-visible,
+.final-shutdown.final-scene-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.final-preparing {
+    margin: 0 0 25px;
+    font-size: 10px;
+    letter-spacing: 0.38em;
+    color: rgba(218, 194, 255, 0.65);
+}
+
+.final-countdown-number {
+    font-size: clamp(110px, 20vw, 230px);
+    line-height: 0.8;
+    font-weight: 200;
+    letter-spacing: -0.06em;
+    color: #ffffff;
+    text-shadow:
+        0 0 20px rgba(200,170,255,0.8),
+        0 0 60px rgba(137,74,220,0.55),
+        0 0 120px rgba(91,44,170,0.3);
+    animation: finalNumberPulse 1s ease-in-out;
+}
+
+.final-countdown-line {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 45px;
+    width: min(720px, 80%);
+}
+
+.final-countdown-line span {
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(192,157,255,0.45),
+        transparent
+    );
+}
+
+.final-countdown-line p {
+    margin: 0;
+    font-size: 8px;
+    letter-spacing: 0.22em;
+    color: rgba(210,190,245,0.58);
+    white-space: nowrap;
+}
+
+
+/* =========================
+   ARCHIVE READY
+   ========================= */
+
+.final-ready {
+    background:
+        radial-gradient(circle,
+        rgba(111, 61, 170, 0.12),
+        transparent 40%);
+}
+
+.final-ready-ring {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(211,180,255,0.35);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    box-shadow:
+        0 0 35px rgba(146,84,220,0.2),
+        inset 0 0 25px rgba(146,84,220,0.1);
+    animation: readyRingPulse 2s ease-in-out infinite;
+}
+
+.final-ready-ring span {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow:
+        0 0 15px #ffffff,
+        0 0 40px rgba(177,122,255,0.9);
+}
+
+.final-ready-small {
+    margin: 35px 0 8px;
+    font-size: 8px;
+    letter-spacing: 0.4em;
+    color: rgba(206,182,240,0.55);
+}
+
+.final-ready h2 {
+    margin: 0;
+    font-size: clamp(34px, 7vw, 76px);
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    text-shadow:
+        0 0 25px rgba(189,151,255,0.55);
+}
+
+.final-ready-line {
+    width: 180px;
+    height: 1px;
+    margin-top: 28px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(220,195,255,0.8),
+        transparent
+    );
+}
+
+
+/* =========================
+   BIRTHDAY MESSAGE
+   ========================= */
+
+.final-birthday-message {
+    padding: 30px;
+}
+
+.final-birthday-eyebrow {
+    margin: 0 0 28px;
+    font-size: 9px;
+    letter-spacing: 0.35em;
+    color: rgba(214,190,247,0.62);
+}
+
+.final-birthday-message h2 {
+    margin: 0;
+    font-size: clamp(30px, 6vw, 72px);
+    line-height: 1.1;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.final-birthday-message h2 strong {
+    display: block;
+    margin-top: 8px;
+    font-size: clamp(48px, 10vw, 115px);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    text-shadow:
+        0 0 15px rgba(255,255,255,0.75),
+        0 0 45px rgba(165,93,240,0.65),
+        0 0 100px rgba(107,48,190,0.4);
+}
+
+.final-birthday-divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: min(350px, 70%);
+    margin: 28px auto;
+}
+
+.final-birthday-divider span {
+    flex: 1;
+    height: 1px;
+    background: rgba(210,185,250,0.25);
+}
+
+.final-birthday-divider i {
+    font-style: normal;
+    font-size: 14px;
+    color: rgba(226,204,255,0.8);
+}
+
+.final-birthday-text {
+    width: min(620px, 90%);
+    margin: 10px auto;
+    font-size: clamp(13px, 2vw, 17px);
+    line-height: 1.9;
+    color: rgba(239,232,249,0.78);
+}
+
+.final-birthday-signature {
+    margin-top: 30px;
+}
+
+.final-birthday-signature span,
+.final-birthday-signature strong {
+    display: block;
+}
+
+.final-birthday-signature span {
+    font-size: 7px;
+    letter-spacing: 0.35em;
+    color: rgba(208,185,240,0.45);
+}
+
+.final-birthday-signature strong {
+    margin-top: 7px;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: rgba(237,221,255,0.8);
+}
+
+
+/* =========================
+   SECRET MESSAGE
+   ========================= */
+
+.final-secret {
+    overflow-y: auto;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 70px 24px 100px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(174,125,238,0.45) transparent;
+}
+
+.final-secret-top {
+    width: min(850px, 100%);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(190,155,240,0.14);
+    font-size: 7px;
+    letter-spacing: 0.3em;
+    color: rgba(203,180,235,0.45);
+    flex-shrink: 0;
+}
+
+.final-secret-content {
+    width: min(760px, 100%);
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+
+.final-secret-content p {
+    margin: 0 0 24px;
+    font-size: clamp(14px, 2vw, 17px);
+    line-height: 2;
+    color: rgba(245,240,250,0.82);
+}
+
+.final-secret-content strong {
+    color: #ffffff;
+    text-shadow:
+        0 0 12px rgba(194,155,255,0.35);
+}
+
+.final-secret-signature {
+    margin-top: 45px !important;
+    font-size: 18px !important;
+    color: rgba(255,255,255,0.95) !important;
+}
+
+
+/* =========================
+   P.S.
+   ========================= */
+
+.final-ps {
+    padding: 30px;
+}
+
+.final-ps-symbol {
+    font-size: 30px;
+    filter: drop-shadow(0 0 20px rgba(224,195,255,0.55));
+    animation: psHeart 2s ease-in-out infinite;
+}
+
+.final-ps-label {
+    margin: 25px 0 12px;
+    font-size: 8px;
+    letter-spacing: 0.38em;
+    color: rgba(208,184,240,0.52);
+}
+
+.final-ps-line {
+    width: 120px;
+    height: 1px;
+    background: rgba(210,180,255,0.3);
+    margin-bottom: 35px;
+}
+
+.final-ps-text {
+    width: min(600px, 90%);
+    margin: 0;
+    font-size: clamp(15px, 2.5vw, 20px);
+    line-height: 1.9;
+    color: rgba(246,240,252,0.88);
+}
+
+.final-ps-text strong {
+    color: #ffffff;
+}
+
+
+/* =========================
+   SHUTDOWN
+   ========================= */
+
+.final-shutdown {
+    background: #000003;
+}
+
+.shutdown-scan {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10%;
+    height: 1px;
+    background: rgba(205,175,255,0.35);
+    box-shadow: 0 0 20px rgba(169,108,255,0.5);
+    animation: shutdownScan 3s linear infinite;
+}
+
+.shutdown-status {
+    font-size: 8px;
+    letter-spacing: 0.35em;
+    color: rgba(205,180,235,0.4);
+    margin: 0 0 30px;
+}
+
+.shutdown-core {
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgba(205,175,255,0.25);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    animation: shutdownCore 3s ease-in forwards;
+}
+
+.shutdown-core span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow:
+        0 0 15px #ffffff,
+        0 0 35px rgba(164,103,240,0.8);
+}
+
+.shutdown-archive {
+    margin: 30px 0 0;
+    font-size: 9px;
+    letter-spacing: 0.35em;
+    color: rgba(222,207,240,0.52);
+}
+
+.shutdown-final-line {
+    width: 0;
+    height: 1px;
+    margin-top: 30px;
+    background: rgba(205,180,240,0.35);
+    animation: shutdownLine 2.5s ease forwards;
+}
+
+.shutdown-goodbye {
+    margin-top: 35px;
+    font-size: 8px;
+    letter-spacing: 0.3em;
+    color: rgba(198,175,230,0.28);
+}
+
+
+/* =========================
+   ANIMATIONS
+   ========================= */
+
+@keyframes finalNebulaDriftOne {
+    from { transform: rotate(-18deg) scale(1.25) translate(-2%, -1%); }
+    to { transform: rotate(-12deg) scale(1.35) translate(3%, 2%); }
+}
+
+@keyframes finalNebulaDriftTwo {
+    from { transform: rotate(22deg) scale(1.2) translate(2%, 2%); }
+    to { transform: rotate(28deg) scale(1.35) translate(-3%, -2%); }
+}
+
+@keyframes finalNebulaDriftThree {
+    from { transform: scale(1.1) translateY(1%); }
+    to { transform: scale(1.3) translateY(-3%); }
+}
+
+@keyframes finalGalaxyFloat {
+    from {
+        transform: translate(-50%, -50%) rotate(-18deg) scale(0.98);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(-14deg) scale(1.04);
+    }
+}
+
+@keyframes finalStarsBack {
+    from { transform: translateY(0); }
+    to { transform: translateY(-80px); }
+}
+
+@keyframes finalStarsMid {
+    from { transform: translate(0, 0); }
+    to { transform: translate(-45px, -100px); }
+}
+
+@keyframes finalStarsFront {
+    from { transform: translate(0, 0); }
+    to { transform: translate(55px, -130px); }
+}
+
+@keyframes finalDustPulse {
+    from { opacity: 0.35; }
+    to { opacity: 0.9; }
+}
+
+@keyframes finalNumberPulse {
+    0% {
+        opacity: 0;
+        transform: scale(0.75);
+        filter: blur(8px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+}
+
+@keyframes readyRingPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow:
+            0 0 35px rgba(146,84,220,0.2),
+            inset 0 0 25px rgba(146,84,220,0.1);
+    }
+    50% {
+        transform: scale(1.08);
+        box-shadow:
+            0 0 65px rgba(146,84,220,0.38),
+            inset 0 0 35px rgba(146,84,220,0.18);
+    }
+}
+
+@keyframes psHeart {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.12); }
+}
+
+@keyframes shutdownScan {
+    from { top: -5%; }
+    to { top: 105%; }
+}
+
+@keyframes shutdownCore {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.15); }
+}
+
+@keyframes shutdownLine {
+    from { width: 0; }
+    to { width: 180px; }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .final-preparing {
+        font-size: 8px;
+        letter-spacing: 0.28em;
+    }
+
+    .final-countdown-number {
+        font-size: 120px;
+    }
+
+    .final-countdown-line {
+        margin-top: 35px;
+        width: 88%;
+    }
+
+    .final-countdown-line p {
+        font-size: 6px;
+        letter-spacing: 0.14em;
+    }
+
+    .final-ready h2 {
+        font-size: 32px;
+    }
+
+    .final-birthday-message {
+        padding: 24px 18px;
+    }
+
+    .final-birthday-eyebrow {
+        font-size: 7px;
+        letter-spacing: 0.25em;
+    }
+
+    .final-birthday-message h2 {
+        font-size: 27px;
+    }
+
+    .final-birthday-message h2 strong {
+        font-size: 46px;
+    }
+
+    .final-birthday-text {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .final-secret {
+        padding: 45px 20px 80px;
+    }
+
+    .final-secret-top {
+        font-size: 6px;
+        letter-spacing: 0.2em;
+    }
+
+    .final-secret-content {
+        margin-top: 35px;
+    }
+
+    .final-secret-content p {
+        font-size: 14px;
+        line-height: 1.9;
+        margin-bottom: 22px;
+    }
+
+    .final-ps-text {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .shutdown-status {
+        font-size: 7px;
+    }
+}
+/* =========================================================
+   STEP 12 FIX 02 — SECRET MESSAGE TYPEWRITER
+   ========================================================= */
+
+.final-secret-content {
+    overflow: visible;
+}
+
+.final-secret-content p {
+    min-height: 1.2em;
+}
+
+.final-secret-content p.typewriter-complete {
+    opacity: 1;
+}
+
+.final-secret-content p.typewriter-active {
+    opacity: 1;
+}
+
+
+/* Smooth automatic reading */
+
+.final-secret {
+    scroll-behavior: smooth;
+}
+
+
+/* Final archive should remain above all previous worlds */
+
+.final-archive.final-active {
+    z-index: 15000 !important;
+}
+
+
+/* Completely hide old birthday ending when final archive starts */
+
+body.final-archive-running #birthday-ending {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+/* =========================================================
+   STEP 12 FINAL FIX — PREVENT STEP 11 RETURN
+   ========================================================= */
+
+body.final-archive-complete #birthday-moment {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+/* =========================================================
+   STEP 12.5 — CINEMATIC BUTTERFLY ENDING
+   ========================================================= */
+
+#butterfly-ending {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(73, 24, 112, .28),
+            transparent 38%
+        ),
+        #020106;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 2s ease,
+        visibility 2s ease;
+}
+
+
+/* FINAL SCENE ACTIVE */
+
+#butterfly-ending.butterfly-ending-active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* =========================================================
+   COSMOS
+   ========================================================= */
+
+.butterfly-cosmos {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+
+.butterfly-nebula {
+    position: absolute;
+    width: 80vw;
+    height: 80vw;
+
+    left: 50%;
+    top: 45%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(144, 59, 214, .17),
+            rgba(78, 25, 125, .08) 35%,
+            transparent 70%
+        );
+
+    filter: blur(25px);
+
+    animation:
+        butterflyNebulaBreath 8s ease-in-out infinite;
+}
+
+
+@keyframes butterflyNebulaBreath {
+
+    0%, 100% {
+        transform:
+            translate(-50%, -50%)
+            scale(.92);
+        opacity: .55;
+    }
+
+    50% {
+        transform:
+            translate(-50%, -50%)
+            scale(1.08);
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================
+   STARS
+   ========================================================= */
+
+.butterfly-stars {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        radial-gradient(circle, rgba(255,255,255,.9) 1px, transparent 1.5px),
+        radial-gradient(circle, rgba(201,143,255,.7) 1px, transparent 1.5px),
+        radial-gradient(circle, rgba(255,255,255,.55) 1px, transparent 1.5px);
+
+    background-size:
+        95px 110px,
+        145px 170px,
+        210px 190px;
+
+    background-position:
+        20px 30px,
+        70px 10px,
+        0 80px;
+
+    opacity: .48;
+
+    animation:
+        butterflyStarsMove 18s linear infinite;
+}
+
+
+@keyframes butterflyStarsMove {
+
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(-35px, 25px, 0);
+    }
+}
+
+
+/* =========================================================
+   PARTICLES
+   ========================================================= */
+
+#butterfly-particles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+
+.butterfly-particle {
+    position: absolute;
+
+    width: 3px;
+    height: 3px;
+
+    border-radius: 50%;
+
+    background: #e7c5ff;
+
+    box-shadow:
+        0 0 5px #d58cff,
+        0 0 12px rgba(185, 92, 255, .75);
+
+    opacity: 0;
+
+    animation:
+        butterflyParticleLife 1.8s ease-out forwards;
+}
+
+
+@keyframes butterflyParticleLife {
+
+    0% {
+        opacity: 0;
+        transform: scale(.3);
+    }
+
+    20% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    70% {
+        opacity: .8;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(.15) translateY(-18px);
+    }
+}
+
+
+/* =========================================================
+   BUTTERFLY
+   ========================================================= */
+
+.butterfly-flight-space {
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+}
+
+
+.cinematic-butterfly {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: 170px;
+    height: 138px;
+
+    transform:
+        translate(-50%, -50%)
+        scale(.35);
+
+    opacity: 0;
+
+    filter:
+        drop-shadow(0 0 12px rgba(189, 99, 255, .7))
+        drop-shadow(0 0 30px rgba(133, 46, 200, .35));
+
+    will-change:
+        transform,
+        left,
+        top,
+        opacity;
+}
+
+
+#butterfly-ending.butterfly-flight-active
+.cinematic-butterfly {
+
+    animation:
+        butterflyJourney 10s cubic-bezier(.42, 0, .18, 1) forwards;
+}
+
+
+.butterfly-svg {
+    width: 100%;
+    height: 100%;
+
+    overflow: visible;
+}
+
+
+/* natural wing movement */
+
+.butterfly-wing-left {
+    transform-origin: 145px 128px;
+
+    animation:
+        butterflyWingLeft .32s ease-in-out infinite alternate;
+}
+
+
+.butterfly-wing-right {
+    transform-origin: 175px 128px;
+
+    animation:
+        butterflyWingRight .32s ease-in-out infinite alternate;
+}
+
+
+@keyframes butterflyWingLeft {
+
+    from {
+        transform: rotateY(0deg) rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateY(18deg) rotateZ(-2deg);
+    }
+}
+
+
+@keyframes butterflyWingRight {
+
+    from {
+        transform: rotateY(0deg) rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateY(-18deg) rotateZ(2deg);
+    }
+}
+
+
+/* =========================================================
+   BUTTERFLY FLIGHT
+   ========================================================= */
+
+@keyframes butterflyJourney {
+
+    0% {
+        left: 18%;
+        top: 78%;
+
+        transform:
+            translate(-50%, -50%)
+            rotate(-18deg)
+            scale(.28);
+
+        opacity: 0;
+    }
+
+    8% {
+        opacity: .9;
+    }
+
+    22% {
+        left: 30%;
+        top: 38%;
+
+        transform:
+            translate(-50%, -50%)
+            rotate(12deg)
+            scale(.42);
+    }
+
+    40% {
+        left: 72%;
+        top: 23%;
+
+        transform:
+            translate(-50%, -50%)
+            rotate(18deg)
+            scale(.55);
+    }
+
+    57% {
+        left: 86%;
+        top: 58%;
+
+        transform:
+            translate(-50%, -50%)
+            rotate(35deg)
+            scale(.46);
+    }
+
+    73% {
+        left: 57%;
+        top: 82%;
+
+        transform:
+            translate(-50%, -50%)
+            rotate(-12deg)
+            scale(.38);
+    }
+
+    88% {
+        left: 27%;
+        top: 61%;
+
+        transform:
+            translate(-50%, -50%)
+            rotate(-24deg)
+            scale(.48);
+    }
+
+    100% {
+        left: 50%;
+        top: 47%;
+
+        transform:
+            translate(-50%, -50%)
+            rotate(0deg)
+            scale(.7);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================================================
+   THE END
+   ========================================================= */
+
+.butterfly-end-title {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%)
+        scale(.96);
+
+    text-align: center;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition:
+        opacity 2.5s ease,
+        transform 2.5s ease;
+}
+
+
+.butterfly-end-title span {
+    display: block;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(42px, 10vw, 88px);
+
+    font-weight: 400;
+
+    letter-spacing:
+        .34em;
+
+    padding-left:
+        .34em;
+
+    color: #f5edff;
+
+    text-shadow:
+        0 0 8px rgba(255,255,255,.85),
+        0 0 25px rgba(198,123,255,.7),
+        0 0 55px rgba(145,58,218,.45);
+}
+
+
+.butterfly-end-title small {
+    display: block;
+
+    margin-top: 18px;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing:
+        .55em;
+
+    padding-left:
+        .55em;
+
+    color:
+        rgba(216,177,239,.6);
+}
+
+
+/* THE END appears near the end of flight */
+
+#butterfly-ending.butterfly-title-active
+.butterfly-end-title {
+
+    opacity: 1;
+
+    transform:
+        translate(-50%, -50%)
+        scale(1);
+}
+
+
+/* =========================================================
+   COMPLETE FADE
+   ========================================================= */
+
+#butterfly-ending.butterfly-ending-fade {
+
+    opacity: 0;
+
+    visibility: hidden;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .cinematic-butterfly {
+        width: 135px;
+        height: 110px;
+    }
+
+    .butterfly-end-title span {
+        font-size: 42px;
+        letter-spacing: .22em;
+        padding-left: .22em;
+    }
+
+    .butterfly-end-title small {
+        font-size: 7px;
+        letter-spacing: .35em;
+        padding-left: .35em;
+    }
+
+}

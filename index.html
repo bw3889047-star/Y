@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A special birthday universe created for CH-NIMRA."
+    >
+
+    <title>CH-NIMRA | Birthday Universe</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================================
+         STEP 02 — GALAXY ENVIRONMENT
+         ================================ -->
+
+    <div class="space">
+
+        <!-- Animated star layers -->
+        <div class="stars stars-small"></div>
+        <div class="stars stars-medium"></div>
+        <div class="stars stars-large"></div>
+
+        <!-- Floating particles are created by JavaScript -->
+        <div id="particles"></div>
+
+        <!-- Nebula glows -->
+        <div class="nebula nebula-one"></div>
+        <div class="nebula nebula-two"></div>
+        <div class="nebula nebula-three"></div>
+
+        <!-- Subtle futuristic grid -->
+        <div class="space-grid"></div>
+
+        <!-- Main content -->
+        <main class="foundation">
+
+            <div class="foundation-card">
+
+                <div class="status-dot"></div>
+
+                <p class="system-label">
+                    SYSTEM ONLINE
+                </p>
+
+                <h1>CH-NIMRA</h1>
+
+                <p class="foundation-text">
+                    Birthday Universe
+                </p>
+
+                <div class="connection-status">
+                    HTML <span>✓</span>
+                    CSS <span>✓</span>
+                    JavaScript <span id="js-status">...</span>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+  <!-- =========================================
+     STEP 03 — BIRTHDAY ACCESS LOCK
+     ========================================= -->
+
+<div id="birthday-lock">
+
+    <div class="birthday-lock-card">
+
+        <div class="birthday-lock-icon"></div>
+
+        <p class="birthday-access-label">
+            ACCESS RESTRICTED
+        </p>
+
+        <h2 class="birthday-lock-title">
+            Enter Your Birthday
+        </h2>
+
+        <p class="birthday-lock-description">
+            This universe is reserved
+            for someone very special.
+        </p>
+
+        <input
+            type="text"
+            id="birthday-input"
+            class="birthday-input"
+            placeholder="DD - MM - YYYY"
+            inputmode="numeric"
+            autocomplete="off"
+            maxlength="14"
+        >
+
+        <button
+            type="button"
+            id="birthday-enter-button"
+            class="birthday-enter-button"
+        >
+            ENTER <span class="arrow">→</span>
+        </button>
+
+        <p
+            id="birthday-access-message"
+            class="birthday-access-message"
+        ></p>
+
+        <div class="birthday-lock-footer">
+            Only the chosen one can enter...
+            <span class="birthday-heart">♡</span>
+        </div>
+
+    </div>
+
+</div>
+
+  <!-- =========================================
+     STEP 04 — CINEMATIC ACCESS INTRO
+     ========================================= -->
+
+<div id="cinematic-intro" class="cinematic-intro">
+
+    <div class="cinematic-scan"></div>
+
+    <div class="cinematic-content">
+
+        <div class="cinematic-status">
+            ACCESS GRANTED
+        </div>
+
+        <div class="cinematic-line"></div>
+
+        <h1 class="cinematic-name">
+            CH-NIMRA
+        </h1>
+
+        <p class="cinematic-subtitle">
+            YOUR UNIVERSE IS READY
+        </p>
+
+        <div class="cinematic-loader">
+            <span></span>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =========================================
+     STEP 05 — CH-NIMRA HERO UNIVERSE
+     ========================================= -->
+
+<section id="hero-universe" class="hero-universe">
+
+    <div class="hero-orbit orbit-one"></div>
+    <div class="hero-orbit orbit-two"></div>
+    <div class="hero-orbit orbit-three"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-eyebrow">
+            WELCOME TO HER UNIVERSE
+        </p>
+
+        <h1 class="hero-name">
+            CH-NIMRA
+        </h1>
+
+        <div class="hero-divider"></div>
+
+        <p class="hero-birthday">
+            18 • 10 • 2003
+        </p>
+
+        <p class="hero-message">
+            A whole universe was created
+            for one very special soul.
+        </p>
+
+        <button
+            id="hero-enter-button"
+            class="hero-enter-button"
+            type="button"
+        >
+            <span>ENTER HER UNIVERSE</span>
+            <span class="hero-arrow">→</span>
+        </button>
+
+    </div>
+
+    <div class="hero-corner corner-top-left"></div>
+    <div class="hero-corner corner-top-right"></div>
+    <div class="hero-corner corner-bottom-left"></div>
+    <div class="hero-corner corner-bottom-right"></div>
+
+</section>
+
+<!-- =========================================
+     STEP 06 — HER UNIVERSE MENU
+     ========================================= -->
+
+<section id="universe-menu" class="universe-menu">
+
+    <div class="universe-menu-header">
+        <p class="universe-menu-label">
+            CH-NIMRA'S PRIVATE SPACE
+        </p>
+
+        <h2>HER UNIVERSE</h2>
+
+        <p class="universe-menu-subtitle">
+            Choose a world to explore
+        </p>
+    </div>
+
+
+    <div class="universe-menu-grid">
+
+        <button class="universe-card" data-world="smile">
+            <span class="universe-card-number">01</span>
+            <span class="universe-card-icon">✦</span>
+            <span class="universe-card-title">HER SMILE</span>
+            <span class="universe-card-text">
+                The little thing that changes everything.
+            </span>
+            <span class="universe-card-arrow">→</span>
+        </button>
+
+
+        <button class="universe-card" data-world="memories">
+            <span class="universe-card-number">02</span>
+            <span class="universe-card-icon">◈</span>
+            <span class="universe-card-title">MEMORY GALAXY</span>
+            <span class="universe-card-text">
+                Little moments from a whole universe.
+            </span>
+            <span class="universe-card-arrow">→</span>
+        </button>
+
+
+        <button class="universe-card" data-world="special">
+            <span class="universe-card-number">03</span>
+            <span class="universe-card-icon">♡</span>
+            <span class="universe-card-title">WHY YOU'RE SPECIAL</span>
+            <span class="universe-card-text">
+                Things you may not hear every day.
+            </span>
+            <span class="universe-card-arrow">→</span>
+        </button>
+
+
+        <button class="universe-card" data-world="classified">
+            <span class="universe-card-number">04</span>
+            <span class="universe-card-icon">⌁</span>
+            <span class="universe-card-title">CLASSIFIED</span>
+            <span class="universe-card-text">
+                Something hidden deep inside.
+            </span>
+            <span class="universe-card-arrow">→</span>
+        </button>
+
+    </div>
+
+
+    <div class="universe-menu-footer">
+        <span></span>
+        <p>SELECT YOUR DESTINATION</p>
+        <span></span>
+    </div>
+
+</section>
+
+<!-- STEP 07 — HER SMILE -->
+<section id="smile-world" class="smile-world">
+
+  <button id="smile-back-button" class="smile-back-button" type="button">
+    <span>←</span>
+    BACK TO HER UNIVERSE
+  </button>
+
+  <div class="smile-stars" aria-hidden="true"></div>
+  <div class="smile-glow" aria-hidden="true"></div>
+
+  <div class="smile-content">
+
+    <p class="smile-eyebrow">A LITTLE SOMETHING ABOUT HER</p>
+
+    <div class="smile-symbol">♡</div>
+
+    <h2 class="smile-title">HER SMILE</h2>
+
+    <div class="smile-line"></div>
+
+    <p class="smile-message">
+      Tumhari smile dekh kar pata nahi kyun,
+    </p>
+      ghar ka mahool automatically better lagne lagta hai.
+
+    <p class="smile-submessage">
+      Chhoti behen hone ka haq tum poora use karti ho...
+      lekin tumhari smile ka koi jawab nahi. 🤍
+    </p>
+
+    <button id="smile-continue-button" class="smile-continue-button" type="button">
+      <span>BACK TO HER UNIVERSE</span>
+      <span>→</span>
+    </button>
+
+  </div>
+
+</section>
+
+<!-- STEP 08 — MEMORY GALAXY 2.0 -->
+<section id="memory-world" class="memory-world">
+
+  <!-- Background -->
+  <div class="memory-space" aria-hidden="true">
+    <div class="memory-stars"></div>
+    <div class="memory-nebula memory-nebula-one"></div>
+    <div class="memory-nebula memory-nebula-two"></div>
+    <div class="memory-scan-line"></div>
+  </div>
+
+  <!-- Back -->
+  <button id="memory-back-button" class="memory-back-button" type="button">
+    <span>←</span>
+    BACK TO HER UNIVERSE
+  </button>
+
+  <!-- =========================
+       MEMORY BOOT SCREEN
+       ========================= -->
+
+  <div id="memory-boot" class="memory-boot">
+
+    <div class="memory-boot-core">
+      <div class="memory-core-ring ring-a"></div>
+      <div class="memory-core-ring ring-b"></div>
+      <div class="memory-core-ring ring-c"></div>
+
+      <div class="memory-core-light"></div>
+    </div>
+
+    <p class="memory-boot-label">
+      MEMORY ARCHIVE
+    </p>
+
+    <h2>
+      12 FRAGMENTS DETECTED
+    </h2>
+
+    <div class="memory-boot-progress">
+      <span></span>
+    </div>
+
+    <p class="memory-boot-status">
+      INITIALIZING MEMORIES...
+    </p>
+
+  </div>
+
+  <!-- =========================
+       MEMORY CONSTELLATION
+       ========================= -->
+
+  <div id="memory-main" class="memory-main">
+
+    <header class="memory-header">
+
+      <p class="memory-eyebrow">
+        FRAGMENTS OF A BEAUTIFUL LIFE
+      </p>
+
+      <h2>
+        MEMORY GALAXY
+      </h2>
+
+      <p class="memory-intro">
+        Twelve little pieces of a universe worth remembering.
+      </p>
+
+    </header>
+
+    <div class="memory-constellation">
+
+      <div class="memory-core">
+
+        <div class="memory-core-orbit orbit-one"></div>
+        <div class="memory-core-orbit orbit-two"></div>
+        <div class="memory-core-orbit orbit-three"></div>
+
+        <div class="memory-core-inner">
+          <span>MEMORY</span>
+          <strong>CORE</strong>
+        </div>
+
+      </div>
+
+      <!-- Memory 01 -->
+      <button class="memory-fragment fragment-01" data-photo="1" type="button">
+        <span class="fragment-image">
+          <img src="photo01.jpg" alt="Memory 01">
+        </span>
+        <span class="fragment-label">MEMORY 01</span>
+      </button>
+
+      <!-- Memory 02 -->
+      <button class="memory-fragment fragment-02" data-photo="2" type="button">
+        <span class="fragment-image">
+          <img src="photo02.jpg" alt="Memory 02">
+        </span>
+        <span class="fragment-label">MEMORY 02</span>
+      </button>
+
+      <!-- Memory 03 -->
+      <button class="memory-fragment fragment-03" data-photo="3" type="button">
+        <span class="fragment-image">
+          <img src="photo03.jpg" alt="Memory 03">
+        </span>
+        <span class="fragment-label">MEMORY 03</span>
+      </button>
+
+      <!-- Memory 04 -->
+      <button class="memory-fragment fragment-04" data-photo="4" type="button">
+        <span class="fragment-image">
+          <img src="photo04.jpg" alt="Memory 04">
+        </span>
+        <span class="fragment-label">MEMORY 04</span>
+      </button>
+
+      <!-- Memory 05 -->
+      <button class="memory-fragment fragment-05" data-photo="5" type="button">
+        <span class="fragment-image">
+          <img src="photo05.jpg" alt="Memory 05">
+        </span>
+        <span class="fragment-label">MEMORY 05</span>
+      </button>
+
+      <!-- Memory 06 -->
+      <button class="memory-fragment fragment-06" data-photo="6" type="button">
+        <span class="fragment-image">
+          <img src="photo06.jpg" alt="Memory 06">
+        </span>
+        <span class="fragment-label">MEMORY 06</span>
+      </button>
+
+      <!-- Memory 07 -->
+      <button class="memory-fragment fragment-07" data-photo="7" type="button">
+        <span class="fragment-image">
+          <img src="photo07.jpg" alt="Memory 07">
+        </span>
+        <span class="fragment-label">MEMORY 07</span>
+      </button>
+
+      <!-- Memory 08 -->
+      <button class="memory-fragment fragment-08" data-photo="8" type="button">
+        <span class="fragment-image">
+          <img src="photo08.jpg" alt="Memory 08">
+        </span>
+        <span class="fragment-label">MEMORY 08</span>
+      </button>
+
+      <!-- Memory 09 -->
+      <button class="memory-fragment fragment-09" data-photo="9" type="button">
+        <span class="fragment-image">
+          <img src="photo09.jpg" alt="Memory 09">
+        </span>
+        <span class="fragment-label">MEMORY 09</span>
+      </button>
+
+      <!-- Memory 10 -->
+      <button class="memory-fragment fragment-10" data-photo="10" type="button">
+        <span class="fragment-image">
+          <img src="photo10.jpg" alt="Memory 10">
+        </span>
+        <span class="fragment-label">MEMORY 10</span>
+      </button>
+
+      <!-- Memory 11 -->
+      <button class="memory-fragment fragment-11" data-photo="11" type="button">
+        <span class="fragment-image">
+          <img src="photo11.jpg" alt="Memory 11">
+        </span>
+        <span class="fragment-label">MEMORY 11</span>
+      </button>
+
+      <!-- Memory 12 -->
+      <button class="memory-fragment fragment-12" data-photo="12" type="button">
+        <span class="fragment-image">
+          <img src="photo12.jpg" alt="Memory 12">
+        </span>
+        <span class="fragment-label">MEMORY 12</span>
+      </button>
+
+    </div>
+
+    <p class="memory-hint">
+      SELECT A MEMORY TO OPEN THE ARCHIVE
+    </p>
+
+  </div>
+
+  <!-- =========================
+       CINEMATIC MEMORY VIEWER
+       ========================= -->
+
+  <div id="memory-viewer" class="memory-viewer">
+
+    <div class="viewer-background">
+      <img id="memory-background-image" src="photo01.jpg" alt="">
+    </div>
+
+    <div class="viewer-hud hud-top-left">
+      <span>ARCHIVE STATUS</span>
+      <strong>PRESERVED</strong>
+    </div>
+
+    <div class="viewer-hud hud-top-right">
+      <span>MEMORY SIGNAL</span>
+      <strong>STABLE</strong>
+    </div>
+
+    <button
+      id="memory-viewer-close"
+      class="memory-viewer-close"
+      type="button"
+    >
+      ×
+    </button>
+
+    <button
+      id="memory-prev"
+      class="memory-nav memory-prev"
+      type="button"
+    >
+      <span>←</span>
+      PREVIOUS
+    </button>
+
+    <div class="memory-viewer-content">
+
+      <div class="viewer-photo-frame">
+
+        <div class="viewer-photo-scan"></div>
+
+        <img
+          id="memory-viewer-image"
+          src="photo01.jpg"
+          alt="Memory"
+        >
+
+      </div>
+
+      <div class="viewer-info">
+
+        <span id="memory-viewer-number">
+          MEMORY 01 / 12
+        </span>
+
+        <div class="viewer-info-line"></div>
+
+        <p>
+          SOME MOMENTS DON'T NEED A REASON
+          TO BE REMEMBERED.
+        </p>
+
+        <button
+          id="memory-replay-button"
+          class="memory-replay-button"
+          type="button"
+        >
+          <span>▶</span>
+          REPLAY MEMORY
+        </button>
+
+      </div>
+
+    </div>
+
+    <button
+      id="memory-next"
+      class="memory-nav memory-next"
+      type="button"
+    >
+      NEXT
+      <span>→</span>
+    </button>
+
+    <div class="memory-counter">
+      <span id="memory-counter-text">01 / 12</span>
+
+      <div class="memory-progress">
+        <span id="memory-progress-bar"></span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- =========================
+       MEMORY ENDING
+       ========================= -->
+
+  <div id="memory-ending" class="memory-ending">
+
+    <div class="ending-stars"></div>
+
+    <div class="ending-content">
+
+      <span class="ending-symbol">✦</span>
+
+      <p>
+        12 PHOTOS.
+      </p>
+
+      <p>
+        COUNTLESS MOMENTS.
+      </p>
+
+      <h2>
+        AND SOMEHOW,
+        THEY ALL BELONG
+        TO THE SAME UNIVERSE.
+      </h2>
+
+      <button
+        id="memory-ending-back"
+        class="memory-ending-back"
+        type="button"
+      >
+        RETURN TO HER UNIVERSE
+        <span>→</span>
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- STEP 09 — WHY YOU'RE SPECIAL -->
+<section id="special-world" class="special-world">
+
+  <button id="special-back-button" class="special-back-button" type="button">
+    <span>←</span>
+    BACK TO HER UNIVERSE
+  </button>
+
+  <div class="special-background" aria-hidden="true">
+    <div class="special-orb special-orb-one"></div>
+    <div class="special-orb special-orb-two"></div>
+    <div class="special-stars"></div>
+  </div>
+
+  <div class="special-content">
+
+    <p class="special-eyebrow">
+      A TRANSMISSION FROM YOUR BROTHER
+    </p>
+
+    <div class="special-symbol">✦</div>
+
+    <h2 class="special-title">
+      WHY YOU'RE<br>
+      <span>SPECIAL</span>
+    </h2>
+
+    <div class="special-line"></div>
+
+    <div id="special-reasons" class="special-reasons">
+
+      <article class="special-reason">
+        <span class="special-index">01</span>
+        <div>
+          <h3>YOU MAKE THINGS FUN</h3>
+          <p>
+            Tumhare saath simple si baat bhi kabhi normal nahi rehti.
+            Somehow usmein bhi hasi mil hi jaati hai.
+          </p>
+        </div>
+      </article>
+
+      <article class="special-reason">
+        <span class="special-index">02</span>
+        <div>
+          <h3>YOU'RE COMPLETELY YOURSELF</h3>
+          <p>
+            Thodi funny, thodi crazy, thodi cute...
+            aur isi combination ki wajah se tum, tum ho.
+          </p>
+        </div>
+      </article>
+
+      <article class="special-reason">
+        <span class="special-index">03</span>
+        <div>
+          <h3>YOU'RE FAMILY</h3>
+          <p>
+            Kuch log life ka part hote hain.
+            Siblings life ke background ka permanent soundtrack hote hain.
+          </p>
+        </div>
+      </article>
+
+      <article class="special-reason">
+        <span class="special-index">04</span>
+        <div>
+          <h3>AND THAT'S ENOUGH</h3>
+          <p>
+            Tumhe special banne ke liye kuch prove karne ki zaroorat nahi.
+            Tum already ho.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <button
+      id="special-continue-button"
+      class="special-continue-button"
+      type="button"
+    >
+      <span>BACK TO HER UNIVERSE</span>
+      <span>→</span>
+    </button>
+
+  </div>
+
+</section>
+
+  <!-- STEP 10 — CLASSIFIED -->
+<section id="classified-world" class="classified-world">
+
+  <div class="classified-bg" aria-hidden="true">
+    <div class="classified-grid"></div>
+    <div class="classified-scan"></div>
+    <div class="classified-particles"></div>
+  </div>
+
+  <button
+    id="classified-back-button"
+    class="classified-back-button"
+    type="button"
+  >
+    <span>←</span>
+    BACK TO HER UNIVERSE
+  </button>
+
+  <!-- Security Screen -->
+  <div id="classified-security" class="classified-security">
+
+    <div class="security-symbol">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <p class="classified-eyebrow">
+      RESTRICTED ARCHIVE
+    </p>
+
+    <h2>
+      CLASSIFIED
+    </h2>
+
+    <p class="classified-status">
+      SECURITY LEVEL: MAXIMUM
+    </p>
+
+    <div class="classified-loading">
+      <span></span>
+    </div>
+
+    <p class="classified-loading-text">
+      VERIFYING ACCESS...
+    </p>
+
+  </div>
+
+  <!-- Classified Main -->
+  <div id="classified-main" class="classified-main">
+
+    <div class="classified-top-label">
+      PRIVATE ARCHIVE // CH-NIMRA
+    </div>
+
+    <div class="classified-card">
+
+      <div class="classified-card-top">
+        <span>CLASSIFIED FILE</span>
+        <span>NO. 023</span>
+      </div>
+
+      <div class="classified-lock-icon">
+        🔐
+      </div>
+
+      <p class="classified-file-label">
+        ARCHIVE DESIGNATION
+      </p>
+
+      <h2>
+        LEVEL 23
+      </h2>
+
+      <div class="classified-divider"></div>
+
+      <p class="classified-description">
+        This archive contains something that was
+        never meant to be discovered too early.
+      </p>
+
+      <button
+        id="classified-decrypt-button"
+        class="classified-decrypt-button"
+        type="button"
+      >
+        <span>DECRYPT ARCHIVE</span>
+        <span>✦</span>
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- Decrypted Message -->
+  <div id="classified-reveal" class="classified-reveal">
+
+    <div class="reveal-symbol">
+      ✦
+    </div>
+
+    <p class="reveal-label">
+      ARCHIVE DECRYPTED
+    </p>
+
+    <h2>
+      ONE LAST THING...
+    </h2>
+
+    <div class="reveal-line"></div>
+
+    <p class="reveal-message">
+      Chhoti behen hone ke naate tumne
+      tang karne ka haq toh full use kiya hai...
+      lekin sach ye hai ke tumhare bina
+      ye universe thoda incomplete hota.
+    </p>
+
+    <p class="reveal-small">
+      SOME THINGS ARE BETTER SAVED FOR THE VERY END.
+    </p>
+
+    <button
+      id="classified-final-button"
+      class="classified-final-button"
+      type="button"
+    >
+      OPEN FINAL ARCHIVE
+      <span>→</span>
+    </button>
+
+  </div>
+
+</section>
+
+<!-- STEP 11 — THE BIRTHDAY MOMENT -->
+<section id="birthday-moment" class="birthday-moment">
+
+  <div class="birthday-moment-bg" aria-hidden="true">
+    <div class="birthday-stars"></div>
+    <div class="birthday-nebula"></div>
+    <div class="birthday-orbit birthday-orbit-one"></div>
+    <div class="birthday-orbit birthday-orbit-two"></div>
+    <div class="birthday-particles"></div>
+  </div>
+
+  <!-- Birthday Intro -->
+  <div id="birthday-intro" class="birthday-intro">
+
+    <p class="birthday-system-line">
+      ARCHIVE COMPLETE
+    </p>
+
+    <div class="birthday-system-line-two">
+      BUT THIS WAS NEVER JUST AN ARCHIVE...
+    </div>
+
+    <div class="birthday-event-detected">
+      <span class="detected-dot"></span>
+      TODAY'S EVENT: BIRTHDAY
+    </div>
+
+  </div>
+
+  <!-- Main Birthday Celebration -->
+  <div id="birthday-celebration" class="birthday-celebration">
+
+    <div class="birthday-light-burst" aria-hidden="true"></div>
+
+    <p class="birthday-eyebrow">
+      A SPECIAL DAY IN HER UNIVERSE
+    </p>
+
+    <div class="birthday-cake-symbol" aria-hidden="true">
+      🎂
+    </div>
+
+    <h1 class="birthday-title">
+      <span>HAPPY BIRTHDAY</span>
+      <strong>CH-NIMRA</strong>
+    </h1>
+
+    <div class="birthday-date">
+      18 • 10 • 2026
+    </div>
+
+    <div class="birthday-level">
+      <span>LEVEL</span>
+      <strong>23</strong>
+      <span>UNLOCKED</span>
+    </div>
+
+    <p class="birthday-subtitle">
+      Another year of being beautifully crazy,
+      wonderfully funny, and completely unforgettable.
+    </p>
+
+    <button
+      id="birthday-song-button"
+      class="birthday-song-button"
+      type="button"
+    >
+      <span class="song-icon">▶</span>
+      <span>PLAY HER BIRTHDAY</span>
+    </button>
+
+    <div class="birthday-song-status" id="birthday-song-status">
+      A SPECIAL SONG FOR A SPECIAL SOUL
+    </div>
+
+    <audio id="birthday-song" src="birthday-song.mp3" preload="auto"></audio>
+
+  </div>
+
+  <!-- Make A Wish -->
+  <div id="birthday-wish" class="birthday-wish">
+
+    <div class="wish-orb" id="wish-orb">
+      <div class="wish-orb-core"></div>
+      <div class="wish-orb-ring"></div>
+    </div>
+
+    <p class="wish-label">
+      ONE LAST MOMENT
+    </p>
+
+    <h2>
+      MAKE A WISH
+    </h2>
+
+    <p class="wish-text">
+      23 wishes.<br>
+      1 beautiful soul.
+    </p>
+
+    <p class="wish-instruction">
+      Close your eyes for a second.<br>
+      Think of something you truly want.
+    </p>
+
+    <button
+      id="make-wish-button"
+      class="make-wish-button"
+      type="button"
+    >
+      MAKE A WISH ✦
+    </button>
+
+  </div>
+
+  <!-- Birthday Ending -->
+  <div id="birthday-ending" class="birthday-ending">
+
+    <p class="birthday-ending-label">
+      WISH RECEIVED
+    </p>
+
+    <h2>
+      SOME WISHES<br>
+      ARE NEVER SPOKEN.
+    </h2>
+
+    <p>
+      They're simply felt.
+    </p>
+
+    <button
+      id="open-final-archive-button"
+      class="open-final-archive-button"
+      type="button"
+    >
+      ONE LAST ARCHIVE
+      <span>→</span>
+    </button>
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     STEP 12 — FINAL ARCHIVE
+     ========================================================= -->
+
+<section id="final-archive" class="final-archive">
+
+  <!-- REALISTIC COSMIC BACKGROUND -->
+  <div class="final-cosmos" aria-hidden="true">
+    <div class="final-deep-space"></div>
+
+    <div class="final-nebula final-nebula-one"></div>
+    <div class="final-nebula final-nebula-two"></div>
+    <div class="final-nebula final-nebula-three"></div>
+
+    <div class="final-galaxy"></div>
+
+    <div class="final-stars final-stars-back"></div>
+    <div class="final-stars final-stars-mid"></div>
+    <div class="final-stars final-stars-front"></div>
+
+    <div class="final-star-dust"></div>
+
+    <div class="final-cosmic-glow"></div>
+  </div>
+
+  <!-- COUNTDOWN -->
+  <div id="final-countdown" class="final-countdown">
+
+    <p class="final-preparing">
+      PREPARING FINAL ARCHIVE...
+    </p>
+
+    <div class="final-countdown-number" id="final-countdown-number">
+      23
+    </div>
+
+    <div class="final-countdown-line">
+      <span></span>
+      <p>23 YEARS. COUNTLESS MEMORIES. ONE UNFORGETTABLE SOUL.</p>
+      <span></span>
+    </div>
+
+  </div>
+
+
+  <!-- ARCHIVE READY -->
+  <div id="final-ready" class="final-ready">
+
+    <div class="final-ready-ring">
+      <span></span>
+    </div>
+
+    <p class="final-ready-small">
+      FINAL SYSTEM STATUS
+    </p>
+
+    <h2>ARCHIVE READY</h2>
+
+    <div class="final-ready-line"></div>
+
+  </div>
+
+
+  <!-- FINAL BIRTHDAY MESSAGE -->
+  <div id="final-birthday-message" class="final-birthday-message">
+
+    <p class="final-birthday-eyebrow">
+      ONE LAST THING BEFORE THE END
+    </p>
+
+    <h2>
+      HAPPY BIRTHDAY,
+      <strong>CH-NIMRA</strong>
+    </h2>
+
+    <div class="final-birthday-divider">
+      <span></span>
+      <i>✦</i>
+      <span></span>
+    </div>
+
+    <p class="final-birthday-text">
+      Aaj ka din sirf tumhare birthday ka nahi...
+      balki un saari yaadon ka celebration hai
+      jo tumhari wajah se aur khoobsurat bani.
+    </p>
+
+    <p class="final-birthday-text">
+      Hamesha haste rehna, hamesha apni crazy si self rehna,
+      aur kabhi mat bhoolna ke tum bohot special ho. 🤍
+    </p>
+
+    <div class="final-birthday-signature">
+      <span>WITH LOVE</span>
+      <strong>YOUR BROTHER</strong>
+    </div>
+
+  </div>
+
+
+  <!-- SECRET MESSAGE -->
+  <div id="final-secret" class="final-secret">
+
+    <div class="final-secret-top">
+      <span>PRIVATE MESSAGE</span>
+      <span>FINAL ARCHIVE</span>
+    </div>
+
+    <div class="final-secret-content">
+
+      <p>Agar tum ye message padh rahi ho…</p>
+
+      <p>
+        toh iska matlab hai ke tum meri banayi hui is chhoti si duniya ke
+        bilkul aakhri kone tak pahunch gayi ho. ❤️
+      </p>
+
+      <p> Aur honestly…</p>
+
+      <p>
+        shayad ye woh part hai jo mere liye sabse mushkil tha.
+      </p>
+
+      <p>
+        Kyunkay birthday wish karna easy hai.
+      </p>
+
+      <p>
+        “Happy Birthday.” “Stay happy.” “Allah tumhein hamesha khush rakhe.”
+      </p>
+
+      <p>
+        Ye sab kehna easy hai.
+      </p>
+
+      <p>
+        Lekin jo baat dil mein hoti hai na…
+      </p>
+
+      <p>
+        usay words mein likhna itna easy nahi hota.
+      </p>
+
+      <p>
+        Tum mujhse sirf ek saal chhoti ho.
+      </p>
+
+      <p>
+        Lekin kabhi kabhi mujhe lagta hai jaise humne saath mein ek poori zindagi dekhi hai.
+      </p>
+
+      <p>
+        Woh choti choti laraiyan… ek dusre ko irritate karna… bina wajah hansna…
+        ek dusre ki taang kheenchna… aur woh moments jinhein us waqt humne kabhi special samjha hi nahi.
+      </p>
+
+      <p>
+        Aaj peeche mud kar dekhta hoon toh samajh aata hai…
+      </p>
+
+      <p>
+        <strong>shayad wohi moments sabse special thay.</strong>
+      </p>
+
+      <p>
+        Tum shayad kabhi notice na karo, lekin tumhari khushi dekh kar mujhe andar se ek alag hi sukoon milta hai.
+      </p>
+
+      <p>
+        Aur agar kabhi tumhari life mein koi aisa waqt aaye jab tumhein lage ke tum akeli ho…
+      </p>
+
+      <p>
+        toh bas itna yaad rakhna:
+      </p>
+
+      <p>
+        <strong>Tum akeli nahi ho.</strong>
+      </p>
+
+      <p>
+        Chahe waqt badal jaye. Chahe hum dono apni apni lifes mein kitne bhi busy ho jayein.
+        Chahe kal hum aaj ki tarah har roz baat na karein…
+      </p>
+
+      <p>
+        <strong>tum meri chhoti behen ho, aur ye rishta kabhi old nahi hoga.</strong>
+      </p>
+
+      <p>
+        18 October 2003…
+      </p>
+
+      <p>
+        shayad duniya ke liye bas ek date thi.
+      </p>
+
+      <p>
+        Lekin mere liye us din meri life mein ek aisi person add hui,
+        jiski importance mujhe waqt ke saath aur zyada samajh aayi.
+      </p>
+
+      <p>
+        Aur aaj…
+      </p>
+
+      <p>
+        18 October 2026.
+      </p>
+
+      <p>
+        Tum 23 ki ho gayi ho.
+      </p>
+
+      <p>
+        23 saal…
+      </p>
+
+      <p>
+        Aur mujhe bas ek hi dua karni hai:
+      </p>
+
+      <p>
+        <strong>
+          Allah tumhari zindagi ko itni khubsurat bana de ke tumhein apne guzre hue kal ka kabhi afsos na ho,
+          aur apne aane wale kal ka kabhi darr na lage.
+        </strong>
+      </p>
+
+      <p>
+        Tumhare dreams poore hon. Tumhara dil hamesha halka rahe.
+        Tumhein woh log milen jo tumhari value samjhein.
+        Aur jab life mushkil ho…
+      </p>
+
+      <p>
+        Allah tumhein har baar us mushkil se pehle se zyada strong bana kar nikale.
+      </p>
+
+      <p>
+        Main shayad tumhein roz nahi bolunga ke tum mere liye important ho.
+      </p>
+
+      <p>
+        Shayad kabhi kabhi main tumhein annoy bhi karunga.
+        Kabhi humari larai bhi hogi. Kabhi tum mujhse naraz hogi. Kabhi main tumse.
+      </p>
+
+      <p>
+        Lekin in sab cheezon ke peeche ek cheez hamesha same rahegi:
+      </p>
+
+      <p>
+        <strong>Main tumhari khushi ke liye hamesha dua karunga.</strong>
+      </p>
+
+      <p>
+        Aur agar kabhi tum ye socho ke…
+      </p>
+
+      <p>
+        “Bhai ko meri fikr bhi hai?”
+      </p>
+
+      <p>
+        Toh is message ko dobara padhna.
+      </p>
+
+      <p>
+        Kyunkay shayad main har baar keh nahi pata…
+      </p>
+
+      <p>
+        <strong>lekin haan, bohot hai. ❤️</strong>
+      </p>
+
+      <p>
+        Happy 23rd Birthday, meri chhoti behen.
+      </p>
+
+      <p>
+        Allah tumhein lambi, khubsurat, peaceful aur kamyab zindagi de.
+      </p>
+
+      <p>
+        Aur please…
+      </p>
+
+      <p>
+        kabhi apni smile mat khona.
+      </p>
+
+      <p>
+        Kyunkay tumhari smile sirf tumhari nahi hai…
+      </p>
+
+      <p>
+        <strong>kuch logon ki khushi bhi usmein chhupi hoti hai.</strong>
+      </p>
+
+      <p class="final-secret-signature">
+        — Tumhara Bhai ❤️
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- P.S. -->
+  <div id="final-ps" class="final-ps">
+
+    <div class="final-ps-symbol">🤍</div>
+
+    <p class="final-ps-label">
+      ONE LAST SECRET
+    </p>
+
+    <div class="final-ps-line"></div>
+
+    <p class="final-ps-text">
+      <strong>P.S.</strong><br><br>
+
+      Agar tumne ye poora message padha hai…<br><br>
+
+      toh congratulations.<br><br>
+
+      Tum officially website ke sabse secret part tak pahunch gayi ho. 🤍
+    </p>
+
+  </div>
+
+
+  <!-- CINEMATIC SHUTDOWN -->
+  <div id="final-shutdown" class="final-shutdown">
+
+    <div class="shutdown-scan"></div>
+
+    <p class="shutdown-status">
+      CONNECTION TERMINATING...
+    </p>
+
+    <div class="shutdown-core">
+      <span></span>
+    </div>
+
+    <p class="shutdown-archive">
+      MEMORY ARCHIVE SEALED
+    </p>
+
+    <div class="shutdown-final-line"></div>
+
+    <p class="shutdown-goodbye">
+      UNTIL THE NEXT UNIVERSE... ✦
+    </p>
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     STEP 12.5 — CINEMATIC BUTTERFLY ENDING
+     ========================================================= -->
+
+<section id="butterfly-ending" class="butterfly-ending">
+
+    <div class="butterfly-cosmos" aria-hidden="true">
+        <div class="butterfly-stars"></div>
+        <div class="butterfly-nebula"></div>
+        <div id="butterfly-particles"></div>
+    </div>
+
+    <div class="butterfly-flight-space" aria-hidden="true">
+
+        <div id="cinematic-butterfly" class="cinematic-butterfly">
+
+            <svg
+                class="butterfly-svg"
+                viewBox="0 0 320 260"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+            >
+
+                <defs>
+
+                    <radialGradient id="wingLeftGradient"
+                        cx="45%" cy="45%" r="70%">
+                        <stop offset="0%" stop-color="#ffffff"/>
+                        <stop offset="28%" stop-color="#e9c7ff"/>
+                        <stop offset="62%" stop-color="#9d55e8"/>
+                        <stop offset="88%" stop-color="#4b176f"/>
+                        <stop offset="100%" stop-color="#180b2b"/>
+                    </radialGradient>
+
+                    <radialGradient id="wingRightGradient"
+                        cx="55%" cy="45%" r="70%">
+                        <stop offset="0%" stop-color="#ffffff"/>
+                        <stop offset="28%" stop-color="#e9c7ff"/>
+                        <stop offset="62%" stop-color="#9d55e8"/>
+                        <stop offset="88%" stop-color="#4b176f"/>
+                        <stop offset="100%" stop-color="#180b2b"/>
+                    </radialGradient>
+
+                    <linearGradient id="wingVein"
+                        x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#ffffff"
+                            stop-opacity=".8"/>
+                        <stop offset="50%" stop-color="#d89cff"
+                            stop-opacity=".42"/>
+                        <stop offset="100%" stop-color="#6d2ba1"
+                            stop-opacity=".15"/>
+                    </linearGradient>
+
+                    <radialGradient id="bodyGradient"
+                        cx="50%" cy="30%" r="80%">
+                        <stop offset="0%" stop-color="#f4ddff"/>
+                        <stop offset="35%" stop-color="#b978e8"/>
+                        <stop offset="75%" stop-color="#3b1554"/>
+                        <stop offset="100%" stop-color="#100817"/>
+                    </radialGradient>
+
+                    <filter id="butterflyGlow"
+                        x="-100%" y="-100%" width="300%" height="300%">
+                        <feGaussianBlur
+                            stdDeviation="8"
+                            result="blur"/>
+                        <feMerge>
+                            <feMergeNode in="blur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+
+                    <filter id="softWingGlow"
+                        x="-100%" y="-100%" width="300%" height="300%">
+                        <feGaussianBlur stdDeviation="3"/>
+                    </filter>
+
+                </defs>
+
+                <!-- soft aura -->
+                <ellipse
+                    cx="160"
+                    cy="132"
+                    rx="105"
+                    ry="85"
+                    fill="#b85cff"
+                    opacity=".10"
+                    filter="url(#softWingGlow)"
+                />
+
+                <!-- LEFT WING -->
+                <g class="butterfly-wing butterfly-wing-left">
+
+                    <path
+                        d="M145 118
+                           C128 68 83 24 35 30
+                           C8 34 10 70 26 98
+                           C43 127 74 143 120 148
+                           C103 170 91 205 112 224
+                           C131 239 149 207 156 166
+                           C161 145 157 130 145 118Z"
+                        fill="url(#wingLeftGradient)"
+                        stroke="#dba4ff"
+                        stroke-opacity=".65"
+                        stroke-width="2"
+                    />
+
+                    <!-- wing veins -->
+                    <path
+                        d="M140 118 C106 91 74 64 35 39
+                           M137 126 C100 119 63 108 27 89
+                           M130 139 C91 142 60 139 35 128
+                           M139 145 C118 171 111 198 113 220"
+                        fill="none"
+                        stroke="url(#wingVein)"
+                        stroke-width="2"
+                        opacity=".72"
+                    />
+
+                    <circle cx="57" cy="59" r="8"
+                        fill="#ffffff" opacity=".30"/>
+                    <circle cx="83" cy="91" r="5"
+                        fill="#ffffff" opacity=".22"/>
+                    <circle cx="48" cy="111" r="3"
+                        fill="#ffffff" opacity=".45"/>
+
+                </g>
+
+                <!-- RIGHT WING -->
+                <g class="butterfly-wing butterfly-wing-right">
+
+                    <path
+                        d="M175 118
+                           C192 68 237 24 285 30
+                           C312 34 310 70 294 98
+                           C277 127 246 143 200 148
+                           C217 170 229 205 208 224
+                           C189 239 171 207 164 166
+                           C159 145 163 130 175 118Z"
+                        fill="url(#wingRightGradient)"
+                        stroke="#dba4ff"
+                        stroke-opacity=".65"
+                        stroke-width="2"
+                    />
+
+                    <!-- wing veins -->
+                    <path
+                        d="M180 118 C214 91 246 64 285 39
+                           M183 126 C220 119 257 108 293 89
+                           M190 139 C229 142 260 139 285 128
+                           M181 145 C202 171 209 198 207 220"
+                        fill="none"
+                        stroke="url(#wingVein)"
+                        stroke-width="2"
+                        opacity=".72"
+                    />
+
+                    <circle cx="263" cy="59" r="8"
+                        fill="#ffffff" opacity=".30"/>
+                    <circle cx="237" cy="91" r="5"
+                        fill="#ffffff" opacity=".22"/>
+                    <circle cx="272" cy="111" r="3"
+                        fill="#ffffff" opacity=".45"/>
+
+                </g>
+
+                <!-- BODY -->
+                <g class="butterfly-body">
+
+                    <ellipse
+                        cx="160"
+                        cy="145"
+                        rx="10"
+                        ry="58"
+                        fill="url(#bodyGradient)"
+                    />
+
+                    <ellipse
+                        cx="160"
+                        cy="111"
+                        rx="8"
+                        ry="12"
+                        fill="#24102f"
+                    />
+
+                    <!-- antennae -->
+                    <path
+                        d="M157 108 C141 83 126 77 115 79
+                           M163 108 C179 83 194 77 205 79"
+                        fill="none"
+                        stroke="#d9a2ff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                    />
+
+                    <circle cx="115" cy="79" r="2.5"
+                        fill="#ffffff"/>
+                    <circle cx="205" cy="79" r="2.5"
+                        fill="#ffffff"/>
+
+                </g>
+
+            </svg>
+
+        </div>
+
+    </div>
+
+    <div id="butterfly-end-title" class="butterfly-end-title">
+        <span>THE END</span>
+        <small>CH-NIMRA'S UNIVERSE</small>
+    </div>
+
+</section>
+  
+    <script src="script.js"></script>
+</body>
+</html>
